@@ -2,21 +2,62 @@
 /***********CONTAINERS***********/
 /********************************/
 .header {
-  background-color: #374045;
+  background-color: #323232;
   text-align: center;
 }
 
+.top {
+  background-color: #14ffec;
+}
+
+.center {
+  background-color: #0d7377;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  width: inherit;
+  height: 800px;
+  position: relative;
+}
+
+.bottom{
+  background-color: #323232;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  display: block;
+  position: relative;
+  height: 300px;
+  width: inherit;
+}
+
 .nav {
-  background-color: #d89216;
   text-align: left;
   margin-left: 150px;
   margin-right: 150px;
 }
 
 .main {
-  border-color: #E1D89F;
+  margin-left: 250px;
+  margin-right: 250px;
+  background-color: #52616b;
+}
+
+.footer{
   margin-left: 150px;
   margin-right: 150px;
+}
+
+.tdhead {
+  font-weight: 900;
+  color: black;
+  text-align: center;
+}
+
+.desc {
+  text-align: left;
+}
+
+.deadline {
+  font-weight: 900;
 }
 
 /********************************/
@@ -25,23 +66,39 @@
 /********************************/
 /*************TAGS***************/
 /********************************/
+
+a:active {
+  background-color:  #323232;
+}
+
 h1 {
 
   margin-top: 100px;
   display: inline-block;
-  color: black;
+  color: white;
   font-family: 'DotGothic16', sans-serif;
   font-size: 48px;
-  font-weight: bold;
-  border: 5px dotted;
-  border-left: none;
-  border-right: none;
+  font-weight: 900;
+}
+
+table {
+  border-style: solid;
+  border-collapse: separate;
+  border-color: #14ffec;
+  border-width: thick;
+  background-color: #323232;
+  color: white;
+  text-align: center;
 }
 
 h3 {
   display: inline-block;
   margin-right: 50px;
   margin-bottom: 100px;
+}
+
+br {
+  background-color: #14ffec;
 }
 
 ul {
@@ -56,16 +113,21 @@ li {
   float: left;
 }
 
+
 li a {
   display: block;
-  color: white;
+  color: black;
+  text-emphasis: 2;
+  background-color: #14ffec;
   text-align: center;
   padding-right: 100px;
   text-decoration: none;
+  font-weight: 900;
 }
 
 li a:hover {
-  background-color:  #d89216;
+  background-color:  #323232;
+  color: red;
   /********************************/
   /********************************/
   /********************************/
