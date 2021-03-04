@@ -58,8 +58,23 @@
 
 .deadline {
   font-weight: 900;
+  color: red;
 }
 
+.last {
+  border: 2px solid;
+  border-color: white;
+  font-weight: 900;
+  color: black;
+  text-align: center;
+}
+.name {
+  text-align: left;
+  font-weight: 900;
+  color: white;
+  border-left: 1px solid;
+  border-color: white;
+}
 /********************************/
 /********************************/
 /********************************/
@@ -67,7 +82,7 @@
 /*************TAGS***************/
 /********************************/
 
-a:active {
+li: {
   background-color:  #323232;
 }
 
@@ -89,6 +104,16 @@ table {
   background-color: #323232;
   color: white;
   text-align: center;
+}
+td {
+  border: none;
+  border-left: 1px solid;
+  border-color: white;
+}
+thead td {
+  border: 2px solid;
+  border-color: white;
+  border-right: none;
 }
 
 h3 {

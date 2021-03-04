@@ -37,7 +37,7 @@
       <img src="" alt="">
       <div class="maintext">
         <h2>Project deadlines</h2>
-        <table border="2px">
+        <table id="myTable" border="2px">
           <thead>
             <tr>
               <td class="tddhead">#</td>
@@ -47,71 +47,79 @@
               <td class="tdhead">START DATE</td>
               <td class="tdhead">DEADLIME DATE</td>
               <td class="tdhead">COMPLETED?</td>
+              <td class="last">TIMELEFT TILL DEADLINE</td>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>1</td>
-              <td class="deadline">1. projekt</td>
+              <td class="name">1. projekt</td>
               <td><a href="https://wis.fit.vutbr.cz/FIT/st/course-sl.php.cs?id=728191">ITY</a></td>
               <td class="desc">1. projekt</td>
               <td>23.2.2021</td>
-              <td class="deadline">8.3.2021</td>
+              <td class="deadline">Mar 8, 2021 24:00:00</td>
               <td>NO</td>
+              <td id="timeleft1">XXX h YY min</td>
             </tr>
             <tr>
               <td>2</td>
-              <td class="deadline">Projekt pokus 1. úlohy</td>
+              <td class="name">Projekt pokus 1. úlohy</td>
               <td><a href="" target="_blank">IPP</a></td>
               <td class="desc">Projekt - Pokusné odevzdání 1. úlohy</td>
               <td>15.2.2021</td>
-              <td class="deadline">10.3.2021</td>
+              <td class="deadline">Mar 10, 2021 24:00:00</td>
               <td>NO</td>
+              <td id="timeleft2">XXX h YY min</td>
             </tr>
             <tr>
               <td>3</td>
-              <td class="deadline">Projekt 1. cast</td>
+              <td class="name">Projekt 1. cast</td>
               <td><a href="https://wis.fit.vutbr.cz/FIT/st/course-sl.php.cs?id=728185" target="_blank">IDS</a></td>
               <td class="desc">Projekt 1. část - Datový model (ERD), model případů užití</td>
               <td>3.3.2021</td>
-              <td class="deadline">12.3.2021</td>
+              <td class="deadline">Mar 12, 2021 24:00:00</td>
               <td>NO</td>
+              <td id="timeleft3">XXX h YY min</td>
             </tr>
             <tr>
               <td>4</td>
-              <td class="deadline">Ukol 1</td>
+              <td class="name">Ukol 1</td>
               <td><a href="" target="_blank">IJA</a></td>
               <td class="desc">Ukol 1</td>
               <td>26.2.2021</td>
-              <td class="deadline">12.3.2021</td>
+              <td class="deadline">Mar 12, 2021 24:00:00</td>
               <td>NO</td>
+              <td id="timeleft4">XXX h YY min</td>
             </tr>
             <tr>
               <td>5</td>
-              <td class="deadline">1. projekt</td>
+              <td class="name">1. projekt</td>
               <td><a href="">IZU</a></td>
               <td class="desc">1. projekt</td>
               <td>2.2.2021</td>
-              <td class="deadline">14.3.2021</td>
+              <td class="deadline">Mar 14, 2021 24:00:00</td>
               <td>NO</td>
+              <td id="timeleft5">XXX h YY min</td>
             </tr>
             <tr>
               <td>6</td>
-              <td class="deadline">Projekt 1. uloha</td>
+              <td class="name">Projekt 1. uloha</td>
               <td><a href="" target="_blank">IPP</a></td>
               <td class="desc">Projekt 1. uloha v PHP 7.4</td>
               <td>15.2.2021</td>
-              <td class="deadline">17.3.2021</td>
+              <td class="deadline">Mar 17, 2021 24:00:00</td>
               <td>NO</td>
+              <td id="timeleft6">XXX h YY min</td>
             </tr>
             <tr>
               <td>7</td>
-              <td class="deadline">2. projekt</td>
+              <td class="name">2. projekt</td>
               <td><a href="https://wis.fit.vutbr.cz/FIT/st/course-sl.php.cs?id=728191">ITY</a></td>
               <td class="desc">2. projekt</td>
               <td>9.3.2021</td>
-              <td class="deadline">22.3.2021</td>
+              <td class="deadline">Mar 22, 2021 24:00:00</td>
               <td>NO</td>
+              <td id="timeleft7">XXX h YY min</td>
             </tr>
           </tbody>
         </table>
@@ -132,6 +140,46 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <!-- My Scripts -->
+  <script>
+    //gets table
+    var deadline_date = ["$"];
+    var oTable = document.getElementById('myTable');
+    //gets rows of table
+    var rowLength = oTable.rows.length;
+    //loops through rows
+    for (i = 1; i < rowLength; i++) {
+      //gets cells of current row
+      var oCells = oTable.rows.item(i).cells;
+      //gets amount of cells of current row
+      deadline_date.push(oCells.item(5).innerHTML);
+    }
+
+    var x = setInterval(function() {
+      for (var i = 1; i < rowLength; i++) {
+        // Set the date we're counting down to
+        var countDownDate = new Date(deadline_date[i]).getTime();
+        // Get today's date and time
+        var now = new Date().getTime();
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        // Display the result in the element with id="demo"
+        document.getElementById("timeleft" + i).innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+        // If the count down is finished, write some text
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("timeleft" + i).innerHTML = "EXPIRED";
+        }
+      }
+    }, 1000);
+
+  </script>
 </body>
 
 </html>
