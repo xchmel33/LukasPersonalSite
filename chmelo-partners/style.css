@@ -3,7 +3,7 @@
   width: auto;
   min-width: 460px;
   max-width: 1135px;
-  padding: 0 20%;
+  padding: 0 20px;
   margin: 0 auto;
 }
 .content img{
@@ -13,6 +13,7 @@
 
 body{
   margin: 0;
+  min-width: 768px;
 }
 
 .bold{
@@ -26,8 +27,6 @@ h1{
 .navigation .content{
   display: flex;
   justify-content: space-between;
-  border-color: whitesmoke;
-  border-bottom: 2px solid;
   padding: 20px inherit;
 }
 
@@ -40,14 +39,13 @@ h1{
 .navigation ul{
   display: flex;
   justify-content: space-between;
-  margin-left: 20px;
   margin-top: 32px;
 }
 
 .navigation li{
   list-style-type: none;
   vertical-align: middle;
-  margin-left: 60px;
+  margin-left: 6vw;
 }
 
 .navigation li a{
@@ -66,12 +64,14 @@ h1{
   padding-bottom: 2px;
 }
 
+.splitter{
+  border: 2px solid;
+  border-color: whitesmoke;
+}
 /* main */
 
 .main .content{
   position: relative;
-  padding: 0px 25%;
-  padding-bottom: 0px;
 }
 
 #tim, #kontakt, #pravne_sluzby{
@@ -102,7 +102,7 @@ h1{
 
 #o_nas img{
   width: 75%;
-  padding-left: 120px;
+  padding-left: 10%;
 }
 
 #pravne_sluzby, #tim, #kontakt{
