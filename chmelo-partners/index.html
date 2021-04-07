@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Chmelo & partners</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="navigation">
+    <div class="content">
+      <img src="img/logo.jpg" alt="Chmelo & partners">
+      <ul id="navbar">
+        <li><a href="#" class="active">O nás</a></li>
+        <li><a href="#">Právne služby</a></li>
+        <li><a href="#">Tím</a></li>
+        <li><a href="#">Kontakt</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="main">
+    <div class="content">
+      <div id="o_nas">
+        <h1>Pre nás právo znamená <br> <span class="bold">odbornosť, inovatívnosť <br> a diskrétnosť</span></h1>
+        <img src="img/o_nas.jpg" alt="">
+        <h3>Advokátska kancelária Chmelo & Partners poskytuje právne <br> služby a právne  poradenstvo v oblasti slovenského práva.</h3>
+      </div>
+      <div id="pravne_sluzby">
+        <div class="pravo1">
+          <div class="pravo">
+            <h2>Občianske právo</h2>
+            <p> -Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vestibulum accumsan lacus sed volutpat.<br>
+                -Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Proin vestibulum accumsan lacus sed volutpat.
+                -Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vestibulum accumsan lacus sed volutpat.<br>
+                -Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>-Proin vestibulum accumsan lacus sed volutpat.</p>
+            <button type="button" name="viac">viac</button>
+          </div>
+          <div class="pravo">
+            <h2>Obchodné právo a právo obchodných spoločností</h2>
+            <p> -Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vestibulum accumsan lacus sed volutpat.<br>
+                -Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Proin vestibulum accumsan lacus sed volutpat.
+                -Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vestibulum accumsan lacus sed volutpat.<br>
+                -Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>-Proin vestibulum accumsan lacus sed volutpat.</p>
+            <button type="button" name="viac">viac</button>
+          </div>
+          <div class="pravo">
+            <h2>Živnostenské právo</h2>
+            <p> -Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vestibulum accumsan lacus sed volutpat.<br>
+                -Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Proin vestibulum accumsan lacus sed volutpat.
+                -Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vestibulum accumsan lacus sed volutpat.<br>
+                -Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>-Proin vestibulum accumsan lacus sed volutpat.</p>
+            <button type="button" name="viac">viac</button>
+          </div>
+        </div>
+        <div class="pravo1">
+          <div class="pravo">
+            <h2>Pracovné právo</h2>
+            <p> -Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vestibulum accumsan lacus sed volutpat.<br>
+                -Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Proin vestibulum accumsan lacus sed volutpat.
+                -Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vestibulum accumsan lacus sed volutpat.<br>
+                -Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>-Proin vestibulum accumsan lacus sed volutpat.</p>
+            <button type="button" name="viac">viac</button>
+          </div>
+          <div class="pravo">
+            <h2>Právo nehnuteľností</h2>
+            <p> -Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vestibulum accumsan lacus sed volutpat.<br>
+                -Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Proin vestibulum accumsan lacus sed volutpat.
+                -Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vestibulum accumsan lacus sed volutpat.<br>
+                -Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>-Proin vestibulum accumsan lacus sed volutpat.</p>
+            <button type="button" name="viac">viac</button>
+          </div>
+          <div class="pravo">
+            <h2>Správne právo</h2>
+            <p> -Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vestibulum accumsan lacus sed volutpat.<br>
+                -Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Proin vestibulum accumsan lacus sed volutpat.
+                -Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vestibulum accumsan lacus sed volutpat.<br>
+                -Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>-Proin vestibulum accumsan lacus sed volutpat.</p>
+            <button type="button" name="viac">viac</button>
+          </div>
+        </div>
+      </div>
+      <div id="tim">
+        <h1>team</h1>
+      </div>
+      <div id="kontakt">
+        <h1>contact</h1>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <script type="text/javascript">
+    $("#navbar").on('click', 'li a', function() {
+      $("#navbar li a").removeClass("active"); //assuming that it has to be removed from other li's, else remove this line
+      $(this).addClass("active");
+    });
+    $("#navbar").on('click', 'li ', function() {
+      var index = $(this).index();
+      console.log(index);
+      var a = document.getElementById('o_nas');
+      var b = document.getElementById('pravne_sluzby');
+      var c = document.getElementById('tim');
+      var d = document.getElementById('kontakt');
+      switch (index) {
+        case 0:
+          a.style.display = "block";
+          b.style.display = "none";
+          c.style.display = "none";
+          d.style.display = "none";
+          break;
+        case 1:
+          a.style.display = "none";
+          b.style.display = "block";
+          c.style.display = "none";
+          d.style.display = "none";
+          break;
+        case 2:
+          a.style.display = "none";
+          b.style.display = "none";
+          c.style.display = "block";
+          d.style.display = "none";
+          break;
+        case 3:
+          a.style.display = "none";
+          b.style.display = "none";
+          c.style.display = "none";
+          d.style.display = "block";
+          break;
+      }
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,152 @@
+/* general */
+.content{
+  width: auto;
+  min-width: 460px;
+  max-width: 1135px;
+  padding: 0 20%;
+  margin: 0 auto;
+}
+.content img{
+  width: 100%;
+  margin: 0;
+}
+
+body{
+  margin: 0;
+}
+
+.bold{
+  font-weight: bold;
+}
+h1{
+  text-align: center;
+}
+
+/* navigation */
+.navigation .content{
+  display: flex;
+  justify-content: space-between;
+  border-color: whitesmoke;
+  border-bottom: 2px solid;
+  padding: 20px inherit;
+}
+
+.navigation img{
+  width: 20%;
+  vertical-align: middle;
+  padding-top: 2px;
+}
+
+.navigation ul{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-top: 32px;
+}
+
+.navigation li{
+  list-style-type: none;
+  vertical-align: middle;
+  margin-left: 60px;
+}
+
+.navigation li a{
+  font-weight: normal;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  letter-spacing: .05em;
+  text-decoration: none;
+  color: black;
+}
+
+.active{
+  border-bottom: 2px solid;
+  border-color: red;
+  padding-bottom: 2px;
+}
+
+/* main */
+
+.main .content{
+  position: relative;
+  padding: 0px 25%;
+  padding-bottom: 0px;
+}
+
+#tim, #kontakt, #pravne_sluzby{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: none;
+}
+
+#o_nas h1{
+  font-weight: normal;
+  text-align: center;
+  margin: 40px 20%;
+  margin-top: 15px;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+}
+
+#o_nas h3{
+  font-weight: normal;
+  font-size: 16px;
+  text-align: left;
+  margin: 20px 20%;
+  margin-left: 32%;
+  font-family: 'PT Sans', sans-serif;
+}
+
+#o_nas img{
+  width: 75%;
+  padding-left: 120px;
+}
+
+#pravne_sluzby, #tim, #kontakt{
+  width: inherit;
+  margin: inherit;
+  margin-top: 30px;
+  padding: inherit;
+}
+.pravo{
+  width: 32%;
+  position: relative;
+  height: 300px;
+}
+.pravo h2{
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.pravo p{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  position: absolute;
+  top: 75px;
+  left: 0px;
+}
+
+.pravo button{
+  position: absolute;
+  bottom: 10px;
+  right: 5px;
+  height: 30px;
+  width: 80px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5%;
+}
+
+.pravo button:hover{
+  background-color: red;
+}
+
+.pravo1{
+  display: flex;
+  justify-content: space-between;
+}
