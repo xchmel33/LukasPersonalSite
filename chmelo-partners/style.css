@@ -22,6 +22,17 @@ body{
 h1{
   text-align: center;
 }
+h2{
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bolder;
+}
+span{
+  font-family: 'Poppins', sans-serif;
+}
+
+textarea{
+  resize: none;
+}
 
 /* navigation */
 .navigation .content{

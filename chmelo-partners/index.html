@@ -85,7 +85,15 @@
         <h1>team</h1>
       </div>
       <div id="kontakt">
-        <h1>contact</h1>
+        <h2>S čím Vám môžeme pomôcť?</h2>
+        <form name="frm" onsubmit="form_action()" method="post" enctype="text/plain">
+        <span>Predmet:</span><br>
+        <input id="subj" size="38" type="text"><br>
+        <span>Popis:</span><br>
+        <textarea id="mess" cols="40" rows="5"></textarea><br>
+        <input type="submit" value="Odoslať">
+        <input type="reset" value="Zmazať">
+        </form>
       </div>
     </div>
   </div>
@@ -129,6 +137,11 @@
           break;
       }
     });
+    function form_action() {
+    var subject = document.getElementById("subj").value
+    var body = document.getElementById("mess").value
+    document.frm.action = "mailto:webmaster@example.com?subject=" + subject + "&body=" + body
+    }
   </script>
 </body>
 
