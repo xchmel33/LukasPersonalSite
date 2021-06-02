@@ -1,0 +1,274 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+
+<head>
+  <title>Předměty v ak.r. 2020/2021</title>
+  <link rel="SHORTCUT ICON" href="/images/favicon.ico" type="image/x-icon">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <script type="text/javascript">
+    var ClockMonths = new Array("ledna", "února", "března", "dubna", "května", "června",
+      "července", "srpna", "září", "října", "listopadu", "prosince");
+    var ClockElm;
+    var ClockDiff = 0;
+    document.cookie = "res=w:" + screen.width + ",h:" + screen.height + ",r:" + window.devicePixelRatio + ",p:" + navigator.platform + ",tp:" + navigator.maxTouchPoints + "; path=/";
+
+    function ClockInit() {
+      if (!document.getElementById) return;
+      ClockElm = document.getElementById('clock');
+      if (!ClockElm || !ClockElm.innerHTML) return;
+      var ClockTm = new Date();
+      var datefmt = /^(\d\d?)[.]? ([^ ]+) (\d{4})\s(\d\d):(\d\d):(\d\d)$/;
+      var datep = datefmt.exec(ClockElm.innerHTML);
+      if (datep) {
+        var SrvClock = new Date();
+        SrvClock.setDate(datep[1]);
+        for (var i = 0; i < 12; i++) {
+          if (datep[2] == ClockMonths[i]) {
+            SrvClock.setMonth(i);
+          }
+        }
+        SrvClock.setYear(datep[3]);
+        SrvClock.setHours(datep[4]);
+        SrvClock.setMinutes(datep[5]);
+        SrvClock.setSeconds(datep[6]);
+        ClockDiff = 500 + SrvClock.getTime() - ClockTm.getTime();
+      }
+      setInterval(UpdateClock, 1000);
+    }
+
+    function UpdateClock() {
+      var hr, min, sec, day, mon, year;
+
+      if (!ClockElm || !ClockElm.innerHTML) return;
+      var ClockTm = new Date();
+      ClockTm.setMilliseconds(ClockDiff + ClockTm.getMilliseconds());
+      if (ClockTm.getFullYear) year = ClockTm.getFullYear();
+      else year = ClockTm.getYear + 1900;
+      mon = ClockTm.getMonth();
+      day = ClockTm.getDate();
+      hr = ClockTm.getHours();
+      min = ClockTm.getMinutes();
+      sec = ClockTm.getSeconds();
+      ClockElm.innerHTML = day + '. ' + ClockMonths[mon] + ' ' + year + '\n ' + (hr <= 9 ? '0' : '') + hr + ':' + (min <= 9 ? '0' : '') + min + ':' + (sec <= 9 ? '0' : '') + sec;
+    }
+
+    function filter_empty(name) {
+      var i;
+      for (i = 0; i < document[name].elements.length; i++) {
+        var o = document.forms[name].elements[i];
+        if (o.type != 'text' && o.type != 'select-one') continue;
+        if (o.value == '') o.disabled = true;
+      }
+      return true;
+    }
+  </script>
+</head>
+
+<body onLoad="ClockInit()">
+  <table class="noprint" role="navigation" width="100%" border=0 cellpadding=0 cellspacing=0 style="background-color: #3498db">
+    <tr>
+      <td><a href="https://www.fit.vut.cz/.cs"><img class="FITlogo" src="images/fitnewz.png" alt="FIT"></a></td>
+      <td class="mitembg" nowrap><a class="stab" href="https://wis.fit.vutbr.cz/FIT/st/index.php.cs"><span style="font-size:24px;line-height:14px">&nbsp;&#8962;&nbsp;</span></a></td>
+      <th class="mitem hide-m"><a class="stab" href="https://wis.fit.vutbr.cz/FIT/st/study.php.cs">studia</a></th>
+      <th class="mitem"><a class="stab" href="https://wis.fit.vutbr.cz/FIT/st/courses.php.cs">předměty</a></th>
+      <th class="mitem"><a class="stabs" href="https://wis.fit.vutbr.cz/FIT/st/study-v.php.cs">termíny</a></th>
+      <th class="mitem"><a class="stab" href="https://wis.fit.vutbr.cz/FIT/st/reg.php.cs">registrace</a></th>
+      <th class="mitem hide-m"><a class="stab" href="https://wis.fit.vutbr.cz/FIT/st/admin.php.cs">hesla</a></th>
+      <th class="mitem hide-m"><a class="stab" href="https://wis.fit.vutbr.cz/FIT/st/other.php.cs">ostatní</a></th>
+      <td class="mitembg hide-d hide-t"><a class="stab" href="https://wis.fit.vutbr.cz/FIT/st/other.php.cs"><span style="font-size: 16px;line-height:16px">&nbsp;&gt;&nbsp;</span></a></td>
+      <td class="mitembg hide-m"><a class="stab" href="https://wis.fit.vutbr.cz/FIT/st/logoff.php.cs?logoff=1"><span style="font-size:16px;line-height:16px">&nbsp;&#9032;&nbsp;</span></a></td>
+      <th class="mitem"><a class="stab" href="https://wis.fit.vutbr.cz/FIT/st/study-v.php.en">&nbsp;EN&nbsp;</a></th>
+    </tr>
+  </table>
+  <table cellpadding=4 width="100%" border=0>
+    <tr valign=top>
+      <td style="width: 90%">
+        <h1>Předměty v ak.r. 2020/2021</h1>
+      </td>
+      <td style="text-align: right; white-space: nowrap">
+        <div id="clock"> 2. června 2021
+          17:55:52</div>
+      </td>
+    </tr>
+  </table>
+  <div role="main" class="content">
+    Login xchmel33, <b>Chmelo Lukáš</b>, 2. ročník BITP, prezenční, FIT<br>
+    Ak. rok 2020/2021 studium č.1: řádný zápis<p><a href="news-c.php.cs"><b>Aktuální termíny</b></a>
+    <div><a class="btn" href="https://wis.fit.vutbr.cz/FIT/st/study-v.php.cs?sem=Z">semestr zimní</a></div>
+    <div class="table-holder">
+      <table style="border: 1px solid #999" cellpadding=4 cellspacing=0>
+        <tr bgcolor="#ADD8E6">
+          <th align="left" colspan=10>
+            <h2>semestr letní</h2>
+          </th>
+        </tr>
+        <tr align="center" bgcolor="#ADD8E6">
+          <th align="left">Zkr</th>
+          <th align="left">Předmět</th>
+          <th class="hide-m">Typ</th>
+          <th class="hide-m">Uk</th>
+          <th>Body</th>
+          <th>Záp</th>
+          <th>Zn</th>
+          <th>Kr</th>
+          <th class="hide-m">Datum</th>
+          <th>Termíny</th>
+        </tr>
+        <tr align="center" valign=top bgcolor="#ffdead">
+          <th align="left">IDS</th>
+          <td align="left"><a class=bar href="ids.html">Databázové systémy</a></td>
+          <td class="hide-m">P</td>
+          <td class="hide-m">ZáZk</td>
+          <td align="right">56&nbsp;&nbsp;</td>
+          <td><span class=green><b>ano</b></span></td>
+          <td><b>3E</b></td>
+          <td>5</td>
+          <td nowrap class="hide-m">2021-05-26</td>
+          <td nowrap>0/0/<b>12</b></td>
+        </tr>
+        <tr align="center" valign=top bgcolor="#ffdead">
+          <th align="left">IPK</th>
+          <td align="left"><a class=bar href="ipk.html">Počítačové komunikace a sítě</a></td>
+          <td class="hide-m">P</td>
+          <td class="hide-m">ZáZk</td>
+          <td align="right">51&nbsp;&nbsp;</td>
+          <td><span class=green><b>ano</b></span></td>
+          <td><b>3E</b></td>
+          <td>4</td>
+          <td nowrap class="hide-m">2021-05-28</td>
+          <td nowrap>0/0/<b>4</b></td>
+        </tr>
+        <tr align="center" valign=top bgcolor="#ffdead">
+          <th align="left">IPP</th>
+          <td align="left"><a class=bar href="course-sl.php.cs?id=728187">Principy programovacích jazyků a OOP</a></td>
+          <td class="hide-m">P</td>
+          <td class="hide-m">ZáZk</td>
+          <td align="right">51&nbsp;&nbsp;</td>
+          <td><span class=green><b>ano</b></span></td>
+          <td><b>3E</b></td>
+          <td>5</td>
+          <td nowrap class="hide-m">2021-05-10</td>
+          <td nowrap>0/0/<b>11</b></td>
+        </tr>
+        <tr align="center" valign=top bgcolor="#ffdead">
+          <th align="left">IZU</th>
+          <td align="left"><a class=bar href="course-sl.php.cs?id=728188">Základy umělé inteligence</a></td>
+          <td class="hide-m">P</td>
+          <td class="hide-m">ZáZk</td>
+          <td align="right">28&nbsp;&nbsp;</td>
+          <td><span class=green><b>ano</b></span></td>
+          <td><b>4F</b></td>
+          <td>4</td>
+          <td nowrap class="hide-m">2021-05-12</td>
+          <td nowrap>0/0/<b>9</b></td>
+        </tr>
+        <tr align="center" valign=top bgcolor="#ffdead">
+          <th align="left">IJA</th>
+          <td align="left"><a class=bar href="course-sl.php.cs?id=728189">Seminář Java</a></td>
+          <td class="hide-m">PVT</td>
+          <td class="hide-m">Zá</td>
+          <td align="right">18&nbsp;&nbsp;</td>
+          <td><span class=red><b>ne</b></span></td>
+          <td>-</td>
+          <td>4</td>
+          <td nowrap class="hide-m">2021-05-31</td>
+          <td nowrap>0/0/<b>5</b></td>
+        </tr>
+        <tr align="center" valign=top bgcolor="#f7f7af">
+          <th align="left">ITW</th>
+          <td align="left"><a class=bar href="course-sl.php.cs?id=728190">Tvorba webových stránek</a></td>
+          <td class="hide-m">V</td>
+          <td class="hide-m">KlZá</td>
+          <td align="right">80&nbsp;&nbsp;</td>
+          <td><span class=green><b>ano</b></span></td>
+          <td><b>2B</b></td>
+          <td>5</td>
+          <td nowrap class="hide-m">2021-05-07</td>
+          <td nowrap>0/0/<b>5</b></td>
+        </tr>
+        <tr align="center" valign=top bgcolor="#f7f7af">
+          <th align="left">ITY</th>
+          <td align="left"><a class=bar href="course-sl.php.cs?id=728191">Typografie a publikování</a></td>
+          <td class="hide-m">V</td>
+          <td class="hide-m">KlZá</td>
+          <td align="right">67&nbsp;&nbsp;</td>
+          <td><span class=green><b>ano</b></span></td>
+          <td><b>3D</b></td>
+          <td>4</td>
+          <td nowrap class="hide-m">2021-05-07</td>
+          <td nowrap>0/0/<b>8</b></td>
+        </tr>
+        <tr align="center" valign=top bgcolor="#f7f7af">
+          <th align="left">TV-KT</th>
+          <td align="left"><a class=bar href="course-sl.php.cs?id=754497">Kondiční trénink</a></td>
+          <td class="hide-m">V</td>
+          <td class="hide-m">Zá</td>
+          <td align="right">0&nbsp;&nbsp;</td>
+          <td><span class=green><b>ano</b></span></td>
+          <td>-</td>
+          <td>1</td>
+          <td nowrap class="hide-m">2021-05-04</td>
+          <td nowrap>&nbsp;</td>
+        </tr>
+      </table>
+    </div>
+    <div style="max-width: 800px"> * - hodnocení nebylo zadáno do IS. Předměty, u kterých není nastaven příznak udělení zápočtu nebo mají jiný systém hodnocení než FIT/FEKT a není nastaven příznak absolvování (FP a jiné), mají limitovány body na 49.
+    </div><br><b>Termíny</b> - termíny nové/aktualizované/celkem (nové a aktualizované od posledního zobrazení této stránky)<form action="https://wis.fit.vutbr.cz/FIT/st/study-v.php.cs" method="GET" name="mailform">
+      <p>
+        <input type="checkbox" name="mail" value="1" checked>&nbsp;<b>Zasílat informaci o změně bodů emailem</b> <input type="submit" class="forminput" name="setmail" value="Nastavit">
+    </form>
+    <hr size=1>
+    <table class="stbl" style="float:left; margin-right: 8px; margin-bottom: 8px;">
+      <tr>
+        <th>Kredity</th>
+        <th>&nbsp;P&nbsp;</th>
+        <th>PVT</th>
+        <th>&nbsp;V&nbsp;</th>
+        <th>Suma</th>
+      </tr>
+      <tr>
+        <th align="left">Zapsané</th>
+        <td align="right" bgcolor="#ffdead">54</td>
+        <td align="right" bgcolor="#ffdead">4</td>
+        <td align="right" bgcolor="#f7f7af">11</td>
+        <td align="right"><b>69</b></td>
+      </tr>
+      <tr>
+        <th align="left">Získané</th>
+        <td align="right" bgcolor="#ffdead">50</td>
+        <td align="right" bgcolor="#ffdead">0</td>
+        <td align="right" bgcolor="#f7f7af">11</td>
+        <td align="right"><b>61</b></td>
+      </tr>
+    </table>
+    <table class="stbl" style="min-width:300px">
+      <tr>
+        <th align="left">Studijní průměr bez F</th>
+        <td>105/40 = 2,625</td>
+      </tr>
+      <tr>
+        <th align="left">Vážený studijní průměr</th>
+        <td>197/63 = 3,126</td>
+      <tr>
+        <th align="left">SPbF zima</th>
+        <td>82,5/30 = 2,75</td>
+      </tr>
+      <tr>
+        <th align="left">SPbF léto</th>
+        <td>22,5/10 = 2,25</td>
+      </tr>
+    </table>
+    <p><b>Splnění podmínek kontroly studia za ak.rok</b>
+    <p><a href="https://www.fit.vut.cz/fit/info/smernice/sm2018-13.pdf">Podmínka st.ř. FIT čl. 16</a> (min. 30 kreditů za rok nebo polovinu ze zapsaných pro &lt; 60): <img src="images/checkboxs.gif" alt="ano"> <span class="green">(42)</span>
+    <p><b>Umístění v ročníku: 317. místo z&nbsp;453</b> (bez uznaných předmětů)<br><img class="w100" src="images/studyvp-g.php?lang=cs&amp;cs=1&amp;vp=2,625" alt="[SP-graf]" width=400 height=400><br>
+    <p><a href="study-faq.php.cs">FAQ k výsledkům studia</a>
+  </div>
+  <div class="noprint">
+    <address>&copy;Fakulta informačních technologií VUT, Božetěchova 2, 612 00 Brno<br>Připomínky zasílejte na adresu <a href="mailto:lampa@fit.vut.cz">lampa@fit.vut.cz</a></address>
+  </div>
+</body>
+
+</html>
