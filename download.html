@@ -42,13 +42,14 @@
         else{
           invalidUrlP.innerHTML = "Odkaz OK";
           invalidUrlP.style.color = "green";
-          var request = makeHttpObject();
-          request.open("GET", source, true);
-          request.send(null);
-          request.onreadystatechange = function() {
-            if (request.readyState == 4)
-            document.getElementById('webSourceCode').innerHTML = request.responseText;
-          };
+          // var request = makeHttpObject();
+          // request.open("GET", source, true);
+          // request.send(null);
+          // request.onreadystatechange = function() {
+          //   if (request.readyState == 4)
+          //   document.getElementById('webSourceCode').innerHTML = request.responseText;
+          // };
+          document.getElementById('webSourceCode').innerHTML = fetch(source).responseText;
         }
       }
       function validURL(str) {

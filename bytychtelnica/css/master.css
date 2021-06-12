@@ -1,0 +1,48 @@
+#header{
+  background-color: #B69D74;
+  margin: 0;
+  padding: 0;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background-image: url("C:/Users/chmel/OneDrive/Dokumenty/GitHub/WorldWideWlord/bytychtelnica/image/bytyBcg1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.content{
+  padding: 40px 100px;
+}
+
+#header .content{
+  height: 120px;
+}
+
+#header{
+  filter: opacity(80%);
+}
+
+.navigation{
+  display: flex;
+  justify-content: flex-start;
+  vertical-align: middle;
+  list-style-type: none;
+  margin-top: 50px;
+}
+.navlogo{
+  width: 120px;
+  min-width: 3vw;
+  float: left;
+}
+.navlogo:hover, .navigation li a:hover{
+  filter: contrast(70%);
+}
+.navigation li{
+  margin-right: 30px;
+}
+.navigation li a{
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  /* font ! */
+}
