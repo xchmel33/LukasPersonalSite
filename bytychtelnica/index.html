@@ -5,17 +5,52 @@
     <title>bytychtelnica - bytychtelnica.sk</title>
     <link rel="stylesheet" href="css/master.css">
   </head>
-  <body>
+  <body id="mainBody">
+    <img src="image/bytyBcg1.jpg" alt="logo" id="backgroundImage">
   <div id="header">
     <div class="content">
       <img class="navlogo" src="image/logo.jpg" alt="logo">
       <ul class="navigation">
         <li><a href="o-projekte.html">O PROJEKTE</a></li>
-        <li><a href="byty.html">BYTY</a></li>
+        <li class="bytyNav"><a href="byty.html">BYTY<span class="rotate90">></span></a></li>
         <li><a href="galeria.html">GALÉRIA</a></li>
         <li><a href="kontakt.html">KONTAKT</a></li>
       </ul>
     </div>
   </div>
+  <button type="button" id="switchbutton1" onclick="nextBckImage()">></button>
+  <button type="button" id="switchbutton2" onclick="nextBckImage()"><</button>
+  <span id="dot1" onclick="nextBckImage()"></span>
+  <span id="dot2" onclick="nextBckImage()"></span>
+  <script type="text/javascript">
+    var currentIndex = 0;
+    var imgDuration = 5000;
+    var stop;
+    function slideShow(){
+      currentIndex++;
+      document.getElementById('backgroundImage').className += "fadeOut";
+      setTimeout(function(){
+        if (currentIndex == 0){
+          document.getElementById('backgroundImage').src = "image/bytyBcg1.jpg";
+          document.getElementById('backgroundImage').className = "";
+          document.getElementById('dot1').style.backgroundColor = "blue";
+          document.getElementById('dot2').style.backgroundColor = "#bbb";
+        }
+        else{
+          document.getElementById('backgroundImage').src = "image/bytyBcg2.jpg";
+          document.getElementById('backgroundImage').className = "";
+          document.getElementById('dot1').style.backgroundColor = "#bbb";
+          document.getElementById('dot2').style.backgroundColor = "blue";
+          currentIndex = -1;
+        }
+      },1000);
+      stop = setTimeout(slideShow,imgDuration);
+    }
+    slideShow();
+    function nextBckImage(){
+      clearTimeout(stop);
+      slideShow();
+    }
+  </script>
   </body>
 </html>
