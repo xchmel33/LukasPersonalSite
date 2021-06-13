@@ -6,6 +6,12 @@
     <link rel="stylesheet" href="css/master.css">
   </head>
   <body id="mainBody">
+    <div class="background">
+      <button type="button" id="switchbutton1" onclick="nextBckImage()">></button>
+      <button type="button" id="switchbutton2" onclick="nextBckImage()"><</button>
+      <span id="dot1" onclick="nextBckImage()"></span>
+      <span id="dot2" onclick="nextBckImage()"></span>
+    </div>
     <img src="image/bytyBcg1.jpg" alt="logo" id="backgroundImage">
   <div id="header">
     <div class="content">
@@ -25,10 +31,6 @@
       </ul>
     </div>
   </div>
-  <button type="button" id="switchbutton1" onclick="nextBckImage()">></button>
-  <button type="button" id="switchbutton2" onclick="nextBckImage()"><</button>
-  <span id="dot1" onclick="nextBckImage()"></span>
-  <span id="dot2" onclick="nextBckImage()"></span>
   <script type="text/javascript">
     var currentIndex = 0;
     var imgDuration = 5000;

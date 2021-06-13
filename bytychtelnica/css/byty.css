@@ -15,19 +15,57 @@
   background-size: cover;
 }
 .hoverArea{
+  position: absolute;
   background-color: transparent;
   width: 670px;
-  height: 50px;
-  position: absolute;
-  left: 19%;
-  top: 47%;
-  transform: skewY(-7.5deg);
+  height: 58px;
+  transform: skewY(-6deg);
   z-index: 1;
 }
+#HA0{
+  height: 40px;
+  left: 19%;
+  top: 58%;
+  transform: skewY(-8deg);
+  width: 620px;
+}
+#HA1{
+  left: 19%;
+  top: 53%;
+  height: 50px;
+  transform: skewY(-7deg);
+}
+#HA2{
+  left: 19%;
+  top: 47%;
+}
+#HA3{
+  left: 19%;
+  top: 41%;
+}
+#HA4{
+  width: 400px;
+  left: 48%;
+  top: 32%;
+  transform: skewY(-5deg);
+  height: 65px;
+}
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1048px) {
   .mainImg{
-    width: 100vw;
-    height: 100vw;
+    width: 98vw;
+    height: 98vw;
+  }
+}
+@media only screen and (max-height: 1048px) {
+  .mainImg{
+    width: 98vh;
+    height: 98vh;
+  }
+}
+@media only screen and (max-height: 1048px) and (max-width: 1024px){
+  .mainImg{
+    width: 95vw;
+    height: 95vw;
   }
 }
