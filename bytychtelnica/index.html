@@ -11,10 +11,17 @@
     <div class="content">
       <img class="navlogo" src="image/logo.jpg" alt="logo">
       <ul class="navigation">
-        <li><a href="o-projekte.html">O PROJEKTE</a></li>
-        <li class="bytyNav"><a href="byty.html">BYTY<span class="rotate90">></span></a></li>
-        <li><a href="galeria.html">GALÉRIA</a></li>
-        <li><a href="kontakt.html">KONTAKT</a></li>
+        <li class="oProjekte"><a href="o-projekte.html">O PROJEKTE</a></li>
+        <li class="bytyNav" id="bNav" onmouseover="showDropNav()" onmouseout="hideDropNav()"><a href="byty.html">BYTY<span class="rotate90">></span></a></li>
+        <ul id="hidden" onmouseover="showDropNav()" onmouseout="hideDropNav()">
+          <li><a href="1podzemnepodlazie.html">1. podzemne podlazie</a></li>
+          <li><a href="1podzemnepodlazie.html">1. nadzemne podlazie</a></li>
+          <li><a href="1podzemnepodlazie.html">2. nadzemne podlazie</a></li>
+          <li><a href="1podzemnepodlazie.html">3. nadzemne podlazie</a></li>
+          <li><a href="1podzemnepodlazie.html">4. nadzemne podlazie</a></li>
+        </ul>
+        <li class="galeria"><a href="galeria.html">GALÉRIA</a></li>
+        <li class="kontakt"><a href="kontakt.html">KONTAKT</a></li>
       </ul>
     </div>
   </div>
@@ -50,6 +57,14 @@
     function nextBckImage(){
       clearTimeout(stop);
       slideShow();
+    }
+    function showDropNav(){
+      document.getElementById('hidden').style.display = "inline-block";
+      document.getElementById('bNav').style.filter = "contrast(70%)";
+    }
+    function hideDropNav(){
+      document.getElementById('hidden').style.display = "none";
+      document.getElementById('bNav').style.filter = "none";
     }
   </script>
   </body>

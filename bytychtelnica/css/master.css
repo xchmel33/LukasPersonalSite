@@ -13,7 +13,7 @@ body{
 }
 
 #header{
-  filter: opacity(80%);
+  opacity: 0.8;
   width: 100vw;
   position: absolute;
   top: 0;
@@ -49,7 +49,7 @@ body{
   min-width: 3vw;
   float: left;
 }
-.navlogo:hover, .navigation li a:hover{
+.navlogo:hover, .oProjekte a:hover, .galeria a:hover, .kontakt a:hover{
   filter: contrast(70%);
 }
 .navigation li{
@@ -88,4 +88,28 @@ body{
   transform: rotate(90deg) scaleY(1.7);
   display: inline-block;
   margin-left: 10px;
+}
+
+.bytyNav{
+  height: 30px;
+  filter: none;
+}
+
+#hidden{
+  display: none;
+  list-style-type: none;
+  background-color: white;
+  position: absolute;
+  left: 350px;
+  top: 120px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 60px;
+}
+#hidden li{
+  margin-bottom: 10px;
+}
+#hidden li a{
+  color: black;
 }

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>bytychtelnica - byty</title>
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/byty.css">
+  </head>
+  <body>
+    <div id="header">
+      <div class="content">
+        <img class="navlogo" src="image/logo.jpg" alt="logo" onclick="document.location=this.id+'index.html';return false;">
+        <ul class="navigation">
+          <li class="oProjekte"><a href="o-projekte.html">O PROJEKTE</a></li>
+          <li class="bytyNav" id="bNav" onmouseover="showDropNav()" onmouseout="hideDropNav()"><a href="byty.html">BYTY<span class="rotate90">></span></a></li>
+          <ul id="hidden" onmouseover="showDropNav()" onmouseout="hideDropNav()">
+            <li><a href="1podzemnepodlazie.html">1. podzemne podlazie</a></li>
+            <li><a href="1podzemnepodlazie.html">1. nadzemne podlazie</a></li>
+            <li><a href="1podzemnepodlazie.html">2. nadzemne podlazie</a></li>
+            <li><a href="1podzemnepodlazie.html">3. nadzemne podlazie</a></li>
+            <li><a href="1podzemnepodlazie.html">4. nadzemne podlazie</a></li>
+          </ul>
+          <li class="galeria"><a href="galeria.html">GALÉRIA</a></li>
+          <li class="kontakt"><a href="kontakt.html">KONTAKT</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="mainImg" class="mainImg">
+    </div>
+    <div id="hoverA" class="hoverArea" onmouseover="show2nadpodlaz();" onmouseout="showbasepodlaz()"></div>
+
+    <script type="text/javascript">
+      function showDropNav(){
+        document.getElementById('hidden').style.display = "inline-block";
+        document.getElementById('bNav').style.filter = "contrast(70%)";
+      }
+      function hideDropNav(){
+        document.getElementById('hidden').style.display = "none";
+        document.getElementById('bNav').style.filter = "none";
+      }
+      function show2nadpodlaz(){
+        document.getElementById('mainImg').style.backgroundImage = "url(image/2nadpodlaz.jpg)";
+      }
+      function showbasepodlaz(){
+        document.getElementById('mainImg').style.backgroundImage = "url(image/1nadpodlaz.jpg)";
+      }
+    </script>
+  </body>
+</html>
