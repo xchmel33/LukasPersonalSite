@@ -7,20 +7,43 @@ body{
   background-color: #B69D74;
   margin: 0;
   padding: 0;
-}
-#header .content{
-  height: 120px;
-}
-
-#header{
-  opacity: 0.8;
+  opacity: 0.9;
   width: 100vw;
   position: absolute;
   top: 0;
   right: 0;
 }
+#mobileHeader{
+  background-color: #B69D74;
+  margin: 0;
+  padding: 0;
+  display: none;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1
+}
+
+#mobileHeader .content{
+  height: 120px;
+}
+
+#mobileImg{
+  display: none;
+}
+
+#header .content{
+  height: 120px;
+}
+
 .content{
   padding: 40px 100px;
+}
+.background{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
 }
 
 #backgroundImage{
@@ -28,21 +51,20 @@ body{
   top: 0;
   z-index: -1;
   width: 100vw;
-  height: 53.45vw;
+  height: 100vh;
   opacity: 1;
   transition: opacity 1s;
+  position: relative;
 }
 #backgroundImage.fadeOut{
   opacity: 0;
 }
-
 
 .navigation{
   display: flex;
   justify-content: flex-start;
   vertical-align: middle;
   list-style-type: none;
-  margin-top: 50px;
 }
 .navlogo{
   width: 120px;
@@ -53,7 +75,12 @@ body{
   filter: contrast(70%);
 }
 .navigation li{
-  margin-right: 30px;
+  margin-right: 2.5%;
+  margin-top: 5px;
+}
+.navText{
+  position: relative;
+  bottom: 30px;
 }
 .navigation li a{
   color: white;
@@ -61,6 +88,10 @@ body{
   text-decoration: none;
   /* font ! */
 }
+.navIcon{
+  height: 70px;
+}
+
 #switchbutton1{
   position: absolute;
   right: 0;
@@ -100,12 +131,13 @@ body{
   list-style-type: none;
   background-color: white;
   position: absolute;
-  left: 350px;
-  top: 120px;
-  padding-top: 30px;
+  left: 513px;
+  top: 135px;
+  padding-top: 20px;
   padding-bottom: 20px;
-  padding-left: 30px;
-  padding-right: 60px;
+  padding-left: 25px;
+  padding-right: 10px;
+  width: 172px;
 }
 #hidden li{
   margin-bottom: 10px;
@@ -114,8 +146,23 @@ body{
   color: black;
 }
 
+@media only screen and (max-width: 1120px){
+  .navigation li{
+    margin-right: 0;
+  }
+}
+
 @media only screen and (max-width: 1024px){
   #header{
     display: none !important;
+  }
+  #mobileHeader{
+    display: block !important;
+  }
+  .background{
+    display: none;
+  }
+  #mobileImg{
+    display: block;
   }
 }

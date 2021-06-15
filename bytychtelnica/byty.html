@@ -9,20 +9,47 @@
   <body>
     <div id="header">
       <div class="content">
-        <img class="navlogo" src="image/logo.jpg" alt="logo" onclick="document.location=this.id+'index.html';return false;">
+        <img class="navlogo" src="image/logo.jpg" alt="logo">
         <ul class="navigation">
-          <li class="oProjekte"><a href="o-projekte.html">O PROJEKTE</a></li>
-          <li class="bytyNav" id="bNav" onmouseover="showDropNav()" onmouseout="hideDropNav()"><a href="byty.html">BYTY<span class="rotate90">></span></a></li>
-          <ul id="hidden" onmouseover="showDropNav()" onmouseout="hideDropNav()">
-            <li><a href="1podzemnepodlazie.html">1. podzemne podlazie</a></li>
-            <li><a href="1podzemnepodlazie.html">1. nadzemne podlazie</a></li>
-            <li><a href="1podzemnepodlazie.html">2. nadzemne podlazie</a></li>
-            <li><a href="1podzemnepodlazie.html">3. nadzemne podlazie</a></li>
-            <li><a href="1podzemnepodlazie.html">4. nadzemne podlazie</a></li>
-          </ul>
-          <li class="galeria"><a href="galeria.html">GALÉRIA</a></li>
-          <li class="kontakt"><a href="kontakt.html">KONTAKT</a></li>
+
+          <li class="oProjekte">
+            <a href="o-projekte.html">
+              <img src="image/oProjekteIcon.JPG" alt="" class="navIcon">
+              <span class="navText">O PROJEKTE</span>
+            </a>
+          </li>
+
+          <li class="bytyNav" id="bNav" onmouseover="showDropNav()" onmouseout="hideDropNav()">
+            <a href="byty.html">
+                <img src="image/BytyIcon.JPG" alt="" class="navIcon">
+                <span class="navText">BYTY<span class="rotate90">></span></span>
+            </a>
+          </li>
+            <ul id="hidden" onmouseover="showDropNav()" onmouseout="hideDropNav()">
+              <li><a href="1podzemnepodlazie.html">1. podzemne podlazie</a></li>
+              <li><a href="1podzemnepodlazie.html">1. nadzemne podlazie</a></li>
+              <li><a href="1podzemnepodlazie.html">2. nadzemne podlazie</a></li>
+              <li><a href="1podzemnepodlazie.html">3. nadzemne podlazie</a></li>
+              <li><a href="1podzemnepodlazie.html">4. nadzemne podlazie</a></li>
+            </ul>
+
+          <li class="galeria">
+            <a href="galeria.html">
+              <img src="image/GaleriaIcon.JPG" alt="" class="navIcon">
+              <span class="navText">GALÉRIA</span>
+            </a>
+          </li>
+          <li class="kontakt">
+            <a href="kontakt.html">
+              <img src="image/KontaktIcon.JPG" alt="" class="navIcon">
+              <span class="navText">KONTAKT</span>
+            </a></li>
         </ul>
+      </div>
+    </div>
+    <div id="mobileHeader">
+      <div class="content">
+        <img class="navlogo" src="image/logo.jpg" alt="logo" class="navIcon">
       </div>
     </div>
     <div id="mainImg" class="mainImg">

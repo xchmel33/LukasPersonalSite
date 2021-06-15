@@ -16,7 +16,8 @@
 }
 .hoverArea{
   position: absolute;
-  background-color: red;
+  background-color: transparent;
+  /* background-color: red; */
   width: 670px;
   height: 58px;
   transform: skewY(-6deg);
@@ -41,7 +42,7 @@
 }
 #HA3{
   left: 19%;
-  top: 40%;
+  top: 41%;
 }
 #HA4{
   width: 400px;
