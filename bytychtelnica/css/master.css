@@ -26,11 +26,17 @@ body{
 }
 
 #mobileHeader .content{
-  height: 120px;
+  height: 80px;
+  position: relative;
 }
 
 #mobileImg{
   display: none;
+}
+.menuSideBar{
+  height: 80px;
+  position: absolute;
+  right: 40px;
 }
 
 #header .content{
@@ -164,5 +170,8 @@ body{
   }
   #mobileImg{
     display: block;
+  }
+  .navlogo{
+    width: 80px;
   }
 }
