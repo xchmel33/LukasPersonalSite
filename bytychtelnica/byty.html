@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>bytychtelnica - byty</title>
-    <link rel="stylesheet" href="css/master.css">
-    <link rel="stylesheet" href="css/byty.css">
-  </head>
-  <body>
+
+<head>
+  <meta charset="utf-8">
+  <title>bytychtelnica - byty</title>
+  <link rel="stylesheet" href="css/master.css">
+  <link rel="stylesheet" href="css/byty.css">
+</head>
+
+<body>
+  <div class="mobile-wrapper">
     <div id="header">
       <div class="content">
         <a href="index.html">
@@ -23,17 +26,17 @@
 
           <li class="bytyNav" id="bNav" onmouseover="showDropNav()" onmouseout="hideDropNav()">
             <a href="byty.html">
-                <img src="image/BytyIcon.JPG" alt="" class="navIcon">
-                <span class="navText">BYTY<span class="rotate90">></span></span>
+              <img src="image/BytyIcon.JPG" alt="" class="navIcon">
+              <span class="navText">BYTY<span class="rotate90">></span></span>
             </a>
           </li>
-            <ul id="hidden" onmouseover="showDropNav()" onmouseout="hideDropNav()">
-              <li><a href="1podzemnepodlazie.html">1. podzemne podlazie</a></li>
-              <li><a href="1podzemnepodlazie.html">1. nadzemne podlazie</a></li>
-              <li><a href="1podzemnepodlazie.html">2. nadzemne podlazie</a></li>
-              <li><a href="1podzemnepodlazie.html">3. nadzemne podlazie</a></li>
-              <li><a href="1podzemnepodlazie.html">4. nadzemne podlazie</a></li>
-            </ul>
+          <ul id="hidden" onmouseover="showDropNav()" onmouseout="hideDropNav()">
+            <li><a href="1podzemnepodlazie.html">1. podzemne podlazie</a></li>
+            <li><a href="1podzemnepodlazie.html">1. nadzemne podlazie</a></li>
+            <li><a href="1podzemnepodlazie.html">2. nadzemne podlazie</a></li>
+            <li><a href="1podzemnepodlazie.html">3. nadzemne podlazie</a></li>
+            <li><a href="1podzemnepodlazie.html">4. nadzemne podlazie</a></li>
+          </ul>
 
           <li class="galeria">
             <a href="galeria.html">
@@ -45,16 +48,42 @@
             <a href="kontakt.html">
               <img src="image/KontaktIcon.JPG" alt="" class="navIcon">
               <span class="navText">KONTAKT</span>
-            </a></li>
+            </a>
+          </li>
         </ul>
       </div>
     </div>
+    <!-- Mobile site -->
     <div id="mobileHeader">
       <div class="content">
         <img class="navlogo" src="image/logo.jpg" alt="logo">
-        <img class="menuSideBar" src="image/sideMenu.PNG" alt="side menu">
+        <img id="menuSB" class="menuSideBar" src="image/sideMenu.PNG" alt="side menu">
       </div>
     </div>
+    <div id="mobileSideBar">
+      <ul>
+        <li>
+          <a href="o-projekte.html">O PROJEKTE</a>
+        </li>
+        <li>
+          <a href="byty.html">BYTY</a> <a href="#" id="rotate180" class="rotate90" onclick="showMobileDropNav()">></a>
+        </li>
+        <ul id="mobileHidden">
+          <li><a href="1podzemnepodlazie.html">1. PODZEMNÉ PODLAŽIE</a></li>
+          <li><a href="1podzemnepodlazie.html">1. NADZEMNÉ PODLAŽIE</a></li>
+          <li><a href="1podzemnepodlazie.html">2. NADZEMNÉ PODLAŽIE</a></li>
+          <li><a href="1podzemnepodlazie.html">3. NADZEMNÉ PODLAŽIE</a></li>
+          <li><a href="1podzemnepodlazie.html">4. NADZEMNÉ PODLAŽIE</a></li>
+        </ul>
+        <li>
+          <a href="galeria.html">GALERIA</a>
+        </li>
+        <li>
+          <a href="kontakt.html">KONTAKT</a>
+        </li>
+      </ul>
+    </div>
+    <!-- Mobile site -->
     <div id="mainImg" class="mainImg">
       <div class="hoverArea" id="HA0" onmouseover="show1podpodlaz();" onmouseout="showbasepodlaz()" onclick="document.location=this.id+'1podpodlaz.html';return false;"></div>
       <div class="hoverArea" id="HA1" onmouseover="show1nadpodlaz();" onmouseout="showbasepodlaz()" onclick="document.location=this.id+'1nadpodlaz.html';return false;"></div>
@@ -62,12 +91,14 @@
       <div class="hoverArea" id="HA3" onmouseover="show3nadpodlaz();" onmouseout="showbasepodlaz()" onclick="document.location=this.id+'3nadpodlaz.html';return false;"></div>
       <div class="hoverArea" id="HA4" onmouseover="show4nadpodlaz();" onmouseout="showbasepodlaz()" onclick="document.location=this.id+'4nadpodlaz.html';return false;"></div>
     </div>
-    <script type="text/javascript">
+  </div>
+  <script type="text/javascript">
     var images = [];
+
     function preload() {
       for (var i = 0; i < arguments.length; i++) {
-          images[i] = new Image();
-          images[i].src = preload.arguments[i];
+        images[i] = new Image();
+        images[i].src = preload.arguments[i];
       }
     }
     preload(
@@ -77,32 +108,60 @@
       "image/3nadpodlaz.jpg",
       "image/4nadpodlaz.jpg"
     )
-      function showDropNav(){
-        document.getElementById('hidden').style.display = "inline-block";
-        document.getElementById('bNav').style.filter = "contrast(70%)";
+
+    function showDropNav() {
+      document.getElementById('hidden').style.display = "inline-block";
+      document.getElementById('bNav').style.filter = "contrast(70%)";
+    }
+
+    function hideDropNav() {
+      document.getElementById('hidden').style.display = "none";
+      document.getElementById('bNav').style.filter = "none";
+    }
+
+    function show1podpodlaz() {
+      document.getElementById('mainImg').style.backgroundImage = "url(image/1podpodlaz.jpg)";
+    }
+
+    function show1nadpodlaz() {
+      document.getElementById('mainImg').style.backgroundImage = "url(image/1nadpodlaz.jpg)";
+    }
+
+    function show2nadpodlaz() {
+      document.getElementById('mainImg').style.backgroundImage = "url(image/2nadpodlaz.jpg)";
+    }
+
+    function show3nadpodlaz() {
+      document.getElementById('mainImg').style.backgroundImage = "url(image/3nadpodlaz.jpg)";
+    }
+
+    function show4nadpodlaz() {
+      document.getElementById('mainImg').style.backgroundImage = "url(image/4nadpodlaz.jpg)";
+    }
+
+    function showbasepodlaz() {
+      document.getElementById('mainImg').style.backgroundImage = "url(image/1nadpodlaz.jpg)";
+    }
+    window.addEventListener('click', function(e) {
+      if (document.getElementById('menuSB').contains(e.target)) {
+        document.getElementById('mobileSideBar').className = "showMBSB";
+      } else if (!document.getElementById('mobileSideBar').contains(e.target)) {
+        document.getElementById('mobileSideBar').className = "";
       }
-      function hideDropNav(){
-        document.getElementById('hidden').style.display = "none";
-        document.getElementById('bNav').style.filter = "none";
+    });
+    var mobileDropNavClickCounter = 0;
+    function showMobileDropNav(){
+      if (mobileDropNavClickCounter == 1){
+        document.getElementById('mobileHidden').style.display = "none";
+        document.getElementById('rotate180').style.transform = "rotate(90deg) scaleY(1.7)";
+        mobileDropNavClickCounter = 0;
+      } else{
+        document.getElementById('mobileHidden').style.display = "inline-block";
+        document.getElementById('rotate180').style.transform = "rotate(270deg) scaleY(1.7)";
+        mobileDropNavClickCounter++;
       }
-      function show1podpodlaz(){
-        document.getElementById('mainImg').style.backgroundImage = "url(image/1podpodlaz.jpg)";
-      }
-      function show1nadpodlaz(){
-        document.getElementById('mainImg').style.backgroundImage = "url(image/1nadpodlaz.jpg)";
-      }
-      function show2nadpodlaz(){
-        document.getElementById('mainImg').style.backgroundImage = "url(image/2nadpodlaz.jpg)";
-      }
-      function show3nadpodlaz(){
-        document.getElementById('mainImg').style.backgroundImage = "url(image/3nadpodlaz.jpg)";
-      }
-      function show4nadpodlaz(){
-        document.getElementById('mainImg').style.backgroundImage = "url(image/4nadpodlaz.jpg)";
-      }
-      function showbasepodlaz(){
-        document.getElementById('mainImg').style.backgroundImage = "url(image/1nadpodlaz.jpg)";
-      }
-    </script>
-  </body>
+    }
+  </script>
+</body>
+
 </html>
