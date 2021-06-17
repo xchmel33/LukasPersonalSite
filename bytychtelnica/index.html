@@ -58,6 +58,8 @@
       </ul>
     </div>
   </div>
+
+  <!-- MObile site -->
   <div id="mobileHeader">
     <div class="content">
       <img class="navlogo" src="image/logo.jpg" alt="logo">
@@ -70,14 +72,14 @@
         <a href="o-projekte.html">O PROJEKTE</a>
       </li>
       <li>
-        <a href="byty.html">BYTY <span class="rotate90">></span> </a>
+        <a href="byty.html">BYTY</a> <a href="#" id="rotate180" class="rotate90" onclick="showMobileDropNav()">></a>
       </li>
-      <ul class="hidden">
-        <li><a href="1podzemnepodlazie.html">1. podzemne podlazie</a></li>
-        <li><a href="1podzemnepodlazie.html">1. nadzemne podlazie</a></li>
-        <li><a href="1podzemnepodlazie.html">2. nadzemne podlazie</a></li>
-        <li><a href="1podzemnepodlazie.html">3. nadzemne podlazie</a></li>
-        <li><a href="1podzemnepodlazie.html">4. nadzemne podlazie</a></li>
+      <ul id="mobileHidden">
+        <li><a href="1podzemnepodlazie.html">1. PODZEMNÉ PODLAŽIE</a></li>
+        <li><a href="1podzemnepodlazie.html">1. NADZEMNÉ PODLAŽIE</a></li>
+        <li><a href="1podzemnepodlazie.html">2. NADZEMNÉ PODLAŽIE</a></li>
+        <li><a href="1podzemnepodlazie.html">3. NADZEMNÉ PODLAŽIE</a></li>
+        <li><a href="1podzemnepodlazie.html">4. NADZEMNÉ PODLAŽIE</a></li>
       </ul>
       <li>
         <a href="galeria.html">GALERIA</a>
@@ -87,6 +89,9 @@
       </li>
     </ul>
   </div>
+  <img src="image/mobileBackground.jpg" class="mobileBackground">
+  <!-- Mobile site -->
+
   <script type="text/javascript">
     var currentIndex = 0;
     var imgDuration = 5000;
@@ -131,10 +136,21 @@
       if (document.getElementById('menuSB').contains(e.target)) {
         document.getElementById('mobileSideBar').className = "showMBSB";
       } else if (!document.getElementById('mobileSideBar').contains(e.target)) {
-        // setTimeout(function(){document.getElementById('mobileSideBar').style.display = "none";},1000);
         document.getElementById('mobileSideBar').className = "";
       }
     });
+    var mobileDropNavClickCounter = 0;
+    function showMobileDropNav(){
+      if (mobileDropNavClickCounter == 1){
+        document.getElementById('mobileHidden').style.display = "none";
+        document.getElementById('rotate180').style.transform = "rotate(90deg) scaleY(1.7)";
+        mobileDropNavClickCounter = 0;
+      } else{
+        document.getElementById('mobileHidden').style.display = "inline-block";
+        document.getElementById('rotate180').style.transform = "rotate(270deg) scaleY(1.7)";
+        mobileDropNavClickCounter++;
+      }
+    }
   </script>
 </body>
 

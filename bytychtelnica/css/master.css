@@ -1,6 +1,7 @@
 body{
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 #header{
@@ -40,32 +41,47 @@ body{
 }
 #mobileSideBar{
   position: absolute;
-  right: 0;
+  right: -100%;
   top: 0;
-  transition: all 1s ease 0s;
+  transition: right 1s ease 0s;
   z-index: 5;
-  list-style-type: none;
-  padding: 0;
+  padding: 30px 20px;
   font-weight: bold;
   z-index: 5;
   margin: 0;
-  overflow: hidden;
-  width: 0px;
-  height: 0px;
-}
-#mobileSideBar.showMBSB{
-  background-color: white;
-  right: 0;
   width: 40vw;
   height: 100vh;
-  padding: 30px 20px;
+  background-color: white;
+}
+#mobileSideBar.showMBSB{
+  right: 0;
 }
 #mobileSideBar li{
-  margin-bottom: 10px;
+  margin-bottom: 16px;
+  list-style-type: none;
+}
+#mobileSideBar li a:hover{
+  opacity: 0.6;
 }
 #mobileSideBar li a{
   text-decoration: none;
   color: black;
+}
+#mobileHidden{
+  list-style-type: none;
+  display: none;
+  position: relative;
+  right: 40px;
+  font-weight: normal;
+  margin-bottom: 20px
+}
+#mobileHidden li{
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+.mobileBackground{
+  display: none;
+  width: 100vw;
 }
 
 #header .content{
@@ -106,7 +122,7 @@ body{
   min-width: 3vw;
   float: left;
 }
-.navlogo:hover, .oProjekte a:hover, .galeria a:hover, .kontakt a:hover{
+.navlogo:hover, .oProjekte a:hover, .galeria a:hover, .kontakt a:hover {
   filter: contrast(70%);
 }
 .navigation li{
@@ -202,5 +218,8 @@ body{
   }
   .navlogo{
     width: 80px;
+  }
+  .mobileBackground{
+    display: block;
   }
 }
