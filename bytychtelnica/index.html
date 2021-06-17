@@ -8,90 +8,91 @@
 </head>
 
 <body id="mainBody">
-  <div class="background">
-    <img src="image/bytyBcg1.jpg" alt="logo" id="backgroundImage">
-    <button type="button" id="switchbutton1" onclick="nextBckImage()">></button>
-    <button type="button" id="switchbutton2" onclick="nextBckImage()"><</button>
-        <span id="dot1" onclick="nextBckImage()"></span>
-        <span id="dot2" onclick="nextBckImage()"></span>
-  </div>
-  <div id="header">
-    <div class="content">
-      <a href="index.html">
-        <img class="navlogo" src="image/logo.jpg" alt="logo">
-      </a>
-      <ul class="navigation">
+  <div class="mobile-wrapper">
+    <div class="background">
+      <img src="image/bytyBcg1.jpg" alt="logo" id="backgroundImage">
+      <button type="button" id="switchbutton1" onclick="nextBckImage()">></button>
+      <button type="button" id="switchbutton2" onclick="nextBckImage()"><</button>
+          <span id="dot1" onclick="nextBckImage()"></span>
+          <span id="dot2" onclick="nextBckImage()"></span>
+    </div>
+    <div id="header">
+      <div class="content">
+        <a href="index.html">
+          <img class="navlogo" src="image/logo.jpg" alt="logo">
+        </a>
+        <ul class="navigation">
 
-        <li class="oProjekte">
-          <a href="o-projekte.html">
-            <img src="image/oProjekteIcon.JPG" alt="" class="navIcon">
-            <span class="navText">O PROJEKTE</span>
-          </a>
-        </li>
+          <li class="oProjekte">
+            <a href="o-projekte.html">
+              <img src="image/oProjekteIcon.JPG" alt="" class="navIcon">
+              <span class="navText">O PROJEKTE</span>
+            </a>
+          </li>
 
-        <li class="bytyNav" id="bNav" onmouseover="showDropNav()" onmouseout="hideDropNav()">
-          <a href="byty.html">
-            <img src="image/BytyIcon.JPG" alt="" class="navIcon">
-            <span class="navText">BYTY<span class="rotate90">></span></span>
-          </a>
-        </li>
-        <ul id="hidden" onmouseover="showDropNav()" onmouseout="hideDropNav()">
-          <li><a href="1podzemnepodlazie.html">1. podzemne podlazie</a></li>
-          <li><a href="1podzemnepodlazie.html">1. nadzemne podlazie</a></li>
-          <li><a href="1podzemnepodlazie.html">2. nadzemne podlazie</a></li>
-          <li><a href="1podzemnepodlazie.html">3. nadzemne podlazie</a></li>
-          <li><a href="1podzemnepodlazie.html">4. nadzemne podlazie</a></li>
+          <li class="bytyNav" id="bNav" onmouseover="showDropNav()" onmouseout="hideDropNav()">
+            <a href="byty.html">
+              <img src="image/BytyIcon.JPG" alt="" class="navIcon">
+              <span class="navText">BYTY<span class="rotate90">></span></span>
+            </a>
+          </li>
+          <ul id="hidden" onmouseover="showDropNav()" onmouseout="hideDropNav()">
+            <li><a href="1podzemnepodlazie.html">1. podzemne podlazie</a></li>
+            <li><a href="1podzemnepodlazie.html">1. nadzemne podlazie</a></li>
+            <li><a href="1podzemnepodlazie.html">2. nadzemne podlazie</a></li>
+            <li><a href="1podzemnepodlazie.html">3. nadzemne podlazie</a></li>
+            <li><a href="1podzemnepodlazie.html">4. nadzemne podlazie</a></li>
+          </ul>
+
+          <li class="galeria">
+            <a href="galeria.html">
+              <img src="image/GaleriaIcon.JPG" alt="" class="navIcon">
+              <span class="navText">GALÉRIA</span>
+            </a>
+          </li>
+          <li class="kontakt">
+            <a href="kontakt.html">
+              <img src="image/KontaktIcon.JPG" alt="" class="navIcon">
+              <span class="navText">KONTAKT</span>
+            </a>
+          </li>
         </ul>
+      </div>
+    </div>
 
-        <li class="galeria">
-          <a href="galeria.html">
-            <img src="image/GaleriaIcon.JPG" alt="" class="navIcon">
-            <span class="navText">GALÉRIA</span>
-          </a>
+    <!-- MObile site -->
+    <div id="mobileHeader">
+      <div class="content">
+        <img class="navlogo" src="image/logo.jpg" alt="logo">
+        <img id="menuSB" class="menuSideBar" src="image/sideMenu.PNG" alt="side menu">
+      </div>
+    </div>
+    <div id="mobileSideBar">
+      <ul>
+        <li>
+          <a href="o-projekte.html">O PROJEKTE</a>
         </li>
-        <li class="kontakt">
-          <a href="kontakt.html">
-            <img src="image/KontaktIcon.JPG" alt="" class="navIcon">
-            <span class="navText">KONTAKT</span>
-          </a>
+        <li>
+          <a href="byty.html">BYTY</a> <a href="#" id="rotate180" class="rotate90" onclick="showMobileDropNav()">></a>
+        </li>
+        <ul id="mobileHidden">
+          <li><a href="1podzemnepodlazie.html">1. PODZEMNÉ PODLAŽIE</a></li>
+          <li><a href="1podzemnepodlazie.html">1. NADZEMNÉ PODLAŽIE</a></li>
+          <li><a href="1podzemnepodlazie.html">2. NADZEMNÉ PODLAŽIE</a></li>
+          <li><a href="1podzemnepodlazie.html">3. NADZEMNÉ PODLAŽIE</a></li>
+          <li><a href="1podzemnepodlazie.html">4. NADZEMNÉ PODLAŽIE</a></li>
+        </ul>
+        <li>
+          <a href="galeria.html">GALERIA</a>
+        </li>
+        <li>
+          <a href="kontakt.html">KONTAKT</a>
         </li>
       </ul>
     </div>
+    <img src="image/mobileBackground.jpg" class="mobileBackground">
+    <!-- Mobile site -->
   </div>
-
-  <!-- MObile site -->
-  <div id="mobileHeader">
-    <div class="content">
-      <img class="navlogo" src="image/logo.jpg" alt="logo">
-      <img id="menuSB" class="menuSideBar" src="image/sideMenu.PNG" alt="side menu">
-    </div>
-  </div>
-  <div id="mobileSideBar">
-    <ul>
-      <li>
-        <a href="o-projekte.html">O PROJEKTE</a>
-      </li>
-      <li>
-        <a href="byty.html">BYTY</a> <a href="#" id="rotate180" class="rotate90" onclick="showMobileDropNav()">></a>
-      </li>
-      <ul id="mobileHidden">
-        <li><a href="1podzemnepodlazie.html">1. PODZEMNÉ PODLAŽIE</a></li>
-        <li><a href="1podzemnepodlazie.html">1. NADZEMNÉ PODLAŽIE</a></li>
-        <li><a href="1podzemnepodlazie.html">2. NADZEMNÉ PODLAŽIE</a></li>
-        <li><a href="1podzemnepodlazie.html">3. NADZEMNÉ PODLAŽIE</a></li>
-        <li><a href="1podzemnepodlazie.html">4. NADZEMNÉ PODLAŽIE</a></li>
-      </ul>
-      <li>
-        <a href="galeria.html">GALERIA</a>
-      </li>
-      <li>
-        <a href="kontakt.html">KONTAKT</a>
-      </li>
-    </ul>
-  </div>
-  <img src="image/mobileBackground.jpg" class="mobileBackground">
-  <!-- Mobile site -->
-
   <script type="text/javascript">
     var currentIndex = 0;
     var imgDuration = 5000;
