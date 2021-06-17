@@ -38,6 +38,35 @@ body{
   position: absolute;
   right: 40px;
 }
+#mobileSideBar{
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: all 1s ease 0s;
+  z-index: 5;
+  list-style-type: none;
+  padding: 0;
+  font-weight: bold;
+  z-index: 5;
+  margin: 0;
+  overflow: hidden;
+  width: 0px;
+  height: 0px;
+}
+#mobileSideBar.showMBSB{
+  background-color: white;
+  right: 0;
+  width: 40vw;
+  height: 100vh;
+  padding: 30px 20px;
+}
+#mobileSideBar li{
+  margin-bottom: 10px;
+}
+#mobileSideBar li a{
+  text-decoration: none;
+  color: black;
+}
 
 #header .content{
   height: 120px;
