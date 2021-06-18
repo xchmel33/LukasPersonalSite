@@ -125,10 +125,10 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 105px;
+  height: 125px;
 }
 .mFHimg{
-  height: 80px;
+  height: 100px;
   position: relative;
 }
 
