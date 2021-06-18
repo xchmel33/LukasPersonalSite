@@ -96,7 +96,7 @@ body{
   padding: 0;
   display: none;
   width: 100vw;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   right: 0;
   z-index: 1;
