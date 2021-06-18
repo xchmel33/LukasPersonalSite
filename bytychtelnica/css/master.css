@@ -102,7 +102,7 @@ body{
   z-index: 1;
 }
 #mobileFrontHeader .content{
-  height: 120px;
+  height: 160px;
   display: block;
 }
 #mobileFrontHeader ul{
@@ -110,6 +110,7 @@ body{
   justify-content: space-between;
   margin: 0;
   padding: 0;
+  margin-top: 20px;
 }
 #mobileFrontHeader li{
   list-style-type: none;
