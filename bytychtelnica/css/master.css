@@ -29,7 +29,7 @@ body{
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 1
+  z-index: 1;
 }
 
 #mobileHeader .content{
@@ -89,6 +89,45 @@ body{
   display: none;
   width: 100vw;
 }
+#mobileFrontHeader{
+  background-color: #B69D74;
+  margin: 0;
+  padding: 0;
+  display: none;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+#mobileFrontHeader .content{
+  height: 120px;
+  display: block;
+}
+#mobileFrontHeader ul{
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+#mobileFrontHeader li{
+  list-style-type: none;
+  text-align: center;
+}
+#mobileFrontHeader li a{
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+.mFHli{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 105px;
+}
+.mFHimg{
+  height: 80px;
+}
 
 #header .content{
   height: 120px;
@@ -128,7 +167,7 @@ body{
   min-width: 3vw;
   float: left;
 }
-.navlogo:hover, .oProjekte a:hover, .galeria a:hover, .kontakt a:hover {
+.navlogo:hover, .oProjekte a:hover, .galeria a:hover, .kontakt a:hover, .mFHli:hover {
   filter: contrast(70%);
 }
 .navigation li{
@@ -226,6 +265,9 @@ body{
     width: 80px;
   }
   .mobileBackground{
+    display: block;
+  }
+  #mobileFrontHeader{
     display: block;
   }
 }
