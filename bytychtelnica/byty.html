@@ -149,6 +149,13 @@
         document.getElementById('mobileSideBar').className = "";
       }
     });
+    window.addEventListener('touchstart', function(e) {
+      if (document.getElementById('menuSB').contains(e.target)) {
+        document.getElementById('mobileSideBar').className = "showMBSB";
+      } else if (!document.getElementById('mobileSideBar').contains(e.target)) {
+        document.getElementById('mobileSideBar').className = "";
+      }
+    });
     var mobileDropNavClickCounter = 0;
     function showMobileDropNav(){
       if (mobileDropNavClickCounter == 1){
