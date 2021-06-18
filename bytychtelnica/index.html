@@ -60,7 +60,7 @@
       </div>
     </div>
 
-    <!-- Mbile site -->
+    <!-- Mobile site -->
     <img src="image/mobileBackground.jpg" class="mobileBackground">
     <div id="mobileFrontHeader">
       <div class="content">
@@ -93,48 +93,11 @@
       </div>
     </div>
     <!-- Mobile site -->
+
   </div>
-  <script type="text/javascript">
-    var currentIndex = 0;
-    var imgDuration = 5000;
-    var stop;
-
-    function slideShow() {
-      currentIndex++;
-      document.getElementById('backgroundImage').className += "fadeOut";
-      setTimeout(function() {
-        if (currentIndex == 0) {
-          document.getElementById('backgroundImage').src = "image/bytyBcg1.jpg";
-          document.getElementById('backgroundImage').className = "";
-          document.getElementById('dot1').style.backgroundColor = "blue";
-          document.getElementById('dot2').style.backgroundColor = "#bbb";
-        } else {
-          document.getElementById('backgroundImage').src = "image/bytyBcg2.jpg";
-          document.getElementById('backgroundImage').className = "";
-          document.getElementById('dot1').style.backgroundColor = "#bbb";
-          document.getElementById('dot2').style.backgroundColor = "blue";
-          currentIndex = -1;
-        }
-      }, 1000);
-      stop = setTimeout(slideShow, imgDuration);
-    }
-    slideShow();
-
-    function nextBckImage() {
-      clearTimeout(stop);
-      slideShow();
-    }
-
-    function showDropNav() {
-      document.getElementById('hidden').style.display = "inline-block";
-      document.getElementById('bNav').style.filter = "contrast(70%)";
-    }
-
-    function hideDropNav() {
-      document.getElementById('hidden').style.display = "none";
-      document.getElementById('bNav').style.filter = "none";
-    }
-  </script>
+  <script src="javascript/slideshow.js" type="text/javascript"></script>
+  <script src="javascript/dropNav.js" type="text/javascript"></script>
 </body>
 
 </html>
+ 

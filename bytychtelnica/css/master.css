@@ -1,16 +1,11 @@
+/* ********** DESKTOP ********** */
+
 body{
   margin: 0;
   padding: 0;
   overflow-x: hidden;
 }
-.mobile-wrapper{
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
+
 #header{
   background-color: #B69D74;
   margin: 0;
@@ -20,116 +15,6 @@ body{
   position: absolute;
   top: 0;
   right: 0;
-}
-#mobileHeader{
-  background-color: #B69D74;
-  margin: 0;
-  padding: 0;
-  display: none;
-  width: 100vw;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 1;
-}
-
-#mobileHeader .content{
-  height: 80px;
-  position: relative;
-}
-
-#mobileImg{
-  display: none;
-}
-.menuSideBar{
-  height: 80px;
-  position: absolute;
-  right: 40px;
-}
-#mobileSideBar{
-  position: absolute;
-  right: -100%;
-  top: 0;
-  transition: right 1s ease 0s;
-  z-index: 5;
-  padding: 30px 20px;
-  font-weight: bold;
-  z-index: 5;
-  margin: 0;
-  width: 40vw;
-  height: 100vh;
-  background-color: white;
-}
-#mobileSideBar.showMBSB{
-  right: 0;
-}
-#mobileSideBar li{
-  margin-bottom: 16px;
-  list-style-type: none;
-}
-#mobileSideBar li a:hover{
-  opacity: 0.6;
-}
-#mobileSideBar li a{
-  text-decoration: none;
-  color: black;
-}
-#mobileHidden{
-  list-style-type: none;
-  display: none;
-  position: relative;
-  right: 40px;
-  font-weight: normal;
-  margin-bottom: 20px
-}
-#mobileHidden li{
-  margin-bottom: 10px;
-  font-size: 13px;
-}
-.mobileBackground{
-  display: none;
-  width: 100%;
-}
-#mobileFrontHeader{
-  background-color: #B69D74;
-  margin: 0;
-  padding: 0;
-  display: none;
-  width: 100vw;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  z-index: 1;
-}
-#mobileFrontHeader .content{
-  height: 160px;
-  display: block;
-}
-#mobileFrontHeader ul{
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
-  margin-top: 20px;
-}
-#mobileFrontHeader li{
-  list-style-type: none;
-  text-align: center;
-}
-#mobileFrontHeader li a{
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
-}
-.mFHli{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 125px;
-}
-.mFHimg{
-  height: 100px;
-  position: relative;
 }
 
 #header .content{
@@ -250,6 +135,130 @@ body{
     margin-right: 0;
   }
 }
+
+/* ********** MOBILE ********** */
+
+.mobile-wrapper{
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#mobileHeader{
+  background-color: #B69D74;
+  margin: 0;
+  padding: 0;
+  display: none;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+#mobileHeader .content{
+  height: 80px;
+  position: relative;
+}
+
+#mobileImg{
+  display: none;
+}
+.menuSideBar{
+  height: 80px;
+  position: absolute;
+  right: 40px;
+}
+#mobileSideBar{
+  position: absolute;
+  right: -100%;
+  top: 0;
+  transition: right 1s ease 0s;
+  z-index: 5;
+  padding: 30px 20px;
+  font-weight: bold;
+  z-index: 5;
+  margin: 0;
+  width: 60vw;
+  height: 100vh;
+  background-color: white;
+}
+#mobileSideBar.showMBSB{
+  right: 0;
+}
+#mobileSideBar li{
+  margin-bottom: 16px;
+  list-style-type: none;
+}
+#mobileSideBar li a:hover{
+  opacity: 0.6;
+}
+#mobileSideBar li a{
+  font-size: 24px;
+  text-decoration: none;
+  color: black;
+}
+#mobileHidden{
+  list-style-type: none;
+  display: none;
+  position: relative;
+  right: 40px;
+  font-weight: normal;
+  margin-bottom: 20px
+}
+#mobileHidden li{
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.mobileBackground{
+  display: none;
+  width: 100%;
+}
+#mobileFrontHeader{
+  background-color: #B69D74;
+  margin: 0;
+  padding: 0;
+  display: none;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+#mobileFrontHeader .content{
+  height: 160px;
+  display: block;
+}
+#mobileFrontHeader ul{
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+}
+#mobileFrontHeader li{
+  list-style-type: none;
+  text-align: center;
+}
+#mobileFrontHeader li a{
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+.mFHli{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 125px;
+}
+.mFHimg{
+  height: 100px;
+  position: relative;
+}
+
 
 @media only screen and (max-width: 1024px){
   #header{
