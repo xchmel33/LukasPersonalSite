@@ -6,6 +6,7 @@ body{
   overflow-x: hidden;
   background-image: url("../image/backgroundPattern.jpg");
   background-size: cover;
+  font-family: "Intro Light Alt", Sans-serif;
 }
 
 #header{
@@ -132,13 +133,65 @@ body{
   color: black;
 }
 
-.map{
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 500px;
-  height: 500px;
+.projContent{
+  width: 90vw;
+  max-width: 1280px;
+  display: block;
+  margin: 40px auto;
+  z-index: 5;
 }
+#projTriangle{
+  width: 0;
+  height: 0;
+  min-width: 0 !important;
+  border-style: solid;
+  border-width: 18vw 0 0 100vw;
+  border-color: transparent transparent transparent #B69D74;
+}
+#projIconsUl{
+  display: flex;
+  justify-content: space-between;
+  filter: brightness(0) invert(1);
+  position: relative;
+  bottom: 1vw;
+}
+#projIconsUl li{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 20%;
+  font-family: "Intro Light Alt", Sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+}
+#financovanie{
+  margin-top: 100px;
+}
+#projBackground{
+  background-color: #B69D74;
+  position: relative;
+  bottom: 40px;
+}
+.projIcon{
+  width: 200px;
+}
+#map{
+  height: 90vw;
+  max-height: 1024px;
+}
+#text{
+  margin-top: 250px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: "Intro Light Alt", Sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5em;
+  letter-spacing: 1.1px;
+  font-style: italic;
+}
+
 
 @media only screen and (max-width: 1120px){
   .navigation li{
@@ -269,6 +322,11 @@ body{
   position: relative;
 }
 
+@media only screen and (min-width: 1640px){
+  #projIconsUl{
+    bottom: 3vw;
+  }
+}
 
 @media only screen and (max-width: 1024px){
   #header{
@@ -291,5 +349,27 @@ body{
   }
   #mobileFrontHeader{
     display: block;
+  }
+  .projContent{
+    width: 95vw;
+  }
+  #map{
+    height: 95vw;
+  }
+  #text{
+    width: 80vw;
+    margin-top: 200px;
+  }
+  #projIconsUl{
+    flex-direction: column;
+    align-items: center;
+    bottom: 5vw;
+  }
+  #projIconsUl li{
+    width: 90vw;
+    margin-bottom: 40px;
+  }
+  .projIcon{
+    width: 200px;
   }
 }
