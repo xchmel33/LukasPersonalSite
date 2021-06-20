@@ -4,6 +4,8 @@ body{
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  background-image: url("../image/backgroundPattern.jpg");
+  background-size: cover;
 }
 
 #header{
@@ -128,6 +130,14 @@ body{
 }
 #hidden li a{
   color: black;
+}
+
+.map{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 500px;
+  height: 500px;
 }
 
 @media only screen and (max-width: 1120px){
