@@ -1,0 +1,88 @@
+.mainImg{
+  width: 45%;
+  height: 45vw;
+  margin-top: 0;
+  background-size: cover !important;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hoverArea{
+  /* background-color: red; */
+  width: 70% !important;
+  height: 7% !important;
+}
+#HA4{
+  width: 250px !important;
+}
+#HA1{
+  height: 30px !important;
+}
+.podlazByt{
+  margin-top: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#pp1{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.podlazImg{
+  width: 50vw;
+  height: 50vw;
+  position: relative;
+  z-index: 1;
+}
+.highlighter{
+  opacity: 0;
+  height: 10.9%;
+  background-color: red;
+  position: absolute;
+  z-index: 5;
+}
+#highlighterP1{
+  top: 30.4%;
+  left: 11%;
+  width: 7%;
+}
+#highlighterP2{
+  top: 30.4%;
+  left: 18.4%;
+  width: 5.6%;
+}
+#highlighterP3{
+  top: 30.4%;
+  left: 25%;
+  width: 6.4%;
+}
+#highlighterP4{
+  top: 30.4%;
+  left: 31.6%;
+  width: 4.9%;
+}
+#highlighterP5{
+  top: 30.4%;
+  left: 57.2%;
+  width: 4.8%;
+}
+#highlighterP6{
+  top: 30.4%;
+  left: 62.7%;
+  width: 4.3%;
+}
+#highlighterP7{
+  top: 30.4%;
+  left: 67.4%;
+  width: 4.6%;
+}
+#highlighterP8{
+  top: 30.4%;
+  left: 72.3%;
+  width: 4.5%;
+}

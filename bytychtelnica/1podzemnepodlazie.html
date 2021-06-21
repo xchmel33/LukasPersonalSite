@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>byty - bytychtelnica.sk</title>
+  <link rel="stylesheet" href="css/master.css">
+  <link rel="stylesheet" href="css/byty.css">
+  <link rel="stylesheet" href="css/podlazia.css">
+</head>
+
+<body>
+  <div class="mobile-wrapper">
+    <div id="header">
+      <div class="content">
+        <a href="index.html">
+          <img class="navlogo" src="image/logo.jpg" alt="logo">
+        </a>
+        <ul class="navigation">
+
+          <li class="oProjekte">
+            <a href="o-projekte.html">
+              <img src="image/oProjekteIcon.JPG" alt="" class="navIcon">
+              <span class="navText">O PROJEKTE</span>
+            </a>
+          </li>
+
+          <li class="bytyNav" id="bNav" onmouseover="showDropNav()" onmouseout="hideDropNav()">
+            <a href="byty.html">
+              <img src="image/BytyIcon.JPG" alt="" class="navIcon">
+              <span class="navText">BYTY<span class="rotate90">></span></span>
+            </a>
+          </li>
+          <ul id="hidden" onmouseover="showDropNav()" onmouseout="hideDropNav()">
+            <li><a href="1podzemnepodlazie.html">1. podzemne podlazie</a></li>
+            <li><a href="1podzemnepodlazie.html">1. nadzemne podlazie</a></li>
+            <li><a href="1podzemnepodlazie.html">2. nadzemne podlazie</a></li>
+            <li><a href="1podzemnepodlazie.html">3. nadzemne podlazie</a></li>
+            <li><a href="1podzemnepodlazie.html">4. nadzemne podlazie</a></li>
+          </ul>
+
+          <li class="galeria">
+            <a href="galeria.html">
+              <img src="image/GaleriaIcon.JPG" alt="" class="navIcon">
+              <span class="navText">GALÉRIA</span>
+            </a>
+          </li>
+          <li class="kontakt">
+            <a href="kontakt.html">
+              <img src="image/KontaktIcon.JPG" alt="" class="navIcon">
+              <span class="navText">KONTAKT</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Mobile site -->
+    <div id="mobileHeader">
+      <div class="content">
+        <a href="index.html">
+          <img class="navlogo" src="image/logo.jpg" alt="logo">
+        </a>
+        <img id="menuSB" class="menuSideBar" src="image/sideMenu.PNG" alt="side menu">
+      </div>
+    </div>
+    <div id="mobileSideBar">
+      <ul>
+        <li>
+          <a href="o-projekte.html">O PROJEKTE</a>
+        </li>
+        <li>
+          <a href="byty.html">BYTY</a> <a href="#" id="rotate180" class="rotate90" onclick="showMobileDropNav()">></a>
+        </li>
+        <ul id="mobileHidden">
+          <li><a href="1podzemnepodlazie.html">1. PODZEMNÉ PODLAŽIE</a></li>
+          <li><a href="1podzemnepodlazie.html">1. NADZEMNÉ PODLAŽIE</a></li>
+          <li><a href="1podzemnepodlazie.html">2. NADZEMNÉ PODLAŽIE</a></li>
+          <li><a href="1podzemnepodlazie.html">3. NADZEMNÉ PODLAŽIE</a></li>
+          <li><a href="1podzemnepodlazie.html">4. NADZEMNÉ PODLAŽIE</a></li>
+        </ul>
+        <li>
+          <a href="galeria.html">GALERIA</a>
+        </li>
+        <li>
+          <a href="kontakt.html">KONTAKT</a>
+        </li>
+      </ul>
+    </div>
+    <!-- Mobile site -->
+
+    <div class="podlazByt">
+      <div class="podlazTable">
+        <table>
+          <tr id='P1' onmouseover="highlightElement('P1')" onmouseout="unhighlightElement('P1')">
+            <td>Garážové státie</td>
+            <td>P1</td>
+            <td>voľné</td>
+          </tr>
+          <tr id='P2' onmouseover="highlightElement('P2')" onmouseout="unhighlightElement('P2')">
+            <td>Garážové státie</td>
+            <td>P2</td>
+            <td>voľné</td>
+          </tr>
+          <tr id='P3' onmouseover="highlightElement('P3')" onmouseout="unhighlightElement('P3')">
+            <td>Garážové státie</td>
+            <td>P3</td>
+            <td>voľné</td>
+          </tr>
+          <tr id='P4' onmouseover="highlightElement('P4')" onmouseout="unhighlightElement('P4')">
+            <td>Garážové státie</td>
+            <td>P4</td>
+            <td>voľné</td>
+          </tr>
+          <tr id='P5' onmouseover="highlightElement('P5')" onmouseout="unhighlightElement('P5')">
+            <td>Garážové státie</td>
+            <td>P5</td>
+            <td>voľné</td>
+          </tr>
+          <tr id='P6' onmouseover="highlightElement('P6')" onmouseout="unhighlightElement('P6')">
+            <td>Garážové státie</td>
+            <td>P6</td>
+            <td>voľné</td>
+          </tr>
+          <tr id='P7' onmouseover="highlightElement('P7')" onmouseout="unhighlightElement('P7')">
+            <td>Garážové státie</td>
+            <td>P7</td>
+            <td>voľné</td>
+          </tr>
+          <tr id='P8' onmouseover="highlightElement('P8')" onmouseout="unhighlightElement('P8')">
+            <td>Garážové státie</td>
+            <td>P8</td>
+            <td>voľné</td>
+          </tr>
+        </table>
+      </div>
+      <div class="podlazImg">
+        <img src="image/byty/pp1.jpg" alt="pp1" id="pp1">
+        <div id="highlighterP1" class="highlighter" onmouseover="highlightElement('P1')" onmouseout="unhighlightElement('P1')"></div>
+        <div id="highlighterP2" class="highlighter" onmouseover="highlightElement('P2')" onmouseout="unhighlightElement('P2')"></div>
+        <div id="highlighterP3" class="highlighter" onmouseover="highlightElement('P3')" onmouseout="unhighlightElement('P3')"></div>
+        <div id="highlighterP4" class="highlighter" onmouseover="highlightElement('P4')" onmouseout="unhighlightElement('P4')"></div>
+        <div id="highlighterP5" class="highlighter" onmouseover="highlightElement('P5')" onmouseout="unhighlightElement('P5')"></div>
+        <div id="highlighterP6" class="highlighter" onmouseover="highlightElement('P6')" onmouseout="unhighlightElement('P6')"></div>
+        <div id="highlighterP7" class="highlighter" onmouseover="highlightElement('P7')" onmouseout="unhighlightElement('P7')"></div>
+        <div id="highlighterP8" class="highlighter" onmouseover="highlightElement('P8')" onmouseout="unhighlightElement('P8')"></div>
+      </div>
+    </div>
+
+
+  </div>
+  <script type="text/javascript">
+    function highlightElement(x){
+      switch (x) {
+        case 'P1':
+          document.getElementById('P1').style.opacity = '0.7';
+          document.getElementById('highlighterP1').style.opacity = '0.7';
+          break;
+        case 'P2':
+          document.getElementById('P2').style.opacity = '0.7';
+          document.getElementById('highlighterP2').style.opacity = '0.7';
+          break;
+        case 'P3':
+          document.getElementById('P3').style.opacity = '0.7';
+          document.getElementById('highlighterP3').style.opacity = '0.7';
+          break;
+        case 'P4':
+          document.getElementById('P4').style.opacity = '0.7';
+          document.getElementById('highlighterP4').style.opacity = '0.7';
+          break;
+        case 'P5':
+          document.getElementById('P5').style.opacity = '0.7';
+          document.getElementById('highlighterP5').style.opacity = '0.7';
+          break;
+        case 'P6':
+          document.getElementById('P6').style.opacity = '0.7';
+          document.getElementById('highlighterP6').style.opacity = '0.7';
+          break;
+        case 'P7':
+          document.getElementById('P7').style.opacity = '0.7';
+          document.getElementById('highlighterP7').style.opacity = '0.7';
+          break;
+        case 'P8':
+          document.getElementById('P8').style.opacity = '0.7';
+          document.getElementById('highlighterP8').style.opacity = '0.7';
+          break;
+
+     }
+    }
+    function unhighlightElement(x){
+      switch (x) {
+        case 'P1':
+          document.getElementById('P1').style.opacity = '1';
+          document.getElementById('highlighterP1').style.opacity = '0';
+          break;
+        case 'P2':
+          document.getElementById('P2').style.opacity = '1';
+          document.getElementById('highlighterP2').style.opacity = '0';
+          break;
+        case 'P3':
+          document.getElementById('P3').style.opacity = '1';
+          document.getElementById('highlighterP3').style.opacity = '0';
+          break;
+        case 'P4':
+          document.getElementById('P4').style.opacity = '1';
+          document.getElementById('highlighterP4').style.opacity = '0';
+          break;
+        case 'P5':
+          document.getElementById('P5').style.opacity = '1';
+          document.getElementById('highlighterP5').style.opacity = '0';
+          break;
+        case 'P6':
+          document.getElementById('P6').style.opacity = '1';
+          document.getElementById('highlighterP6').style.opacity = '0';
+          break;
+        case 'P7':
+          document.getElementById('P7').style.opacity = '1';
+          document.getElementById('highlighterP7').style.opacity = '0';
+          break;
+        case 'P8':
+          document.getElementById('P8').style.opacity = '1';
+          document.getElementById('highlighterP8').style.opacity = '0';
+          break;
+      }
+    }
+  </script>
+  <script src="javascript/dropNav.js" type="text/javascript"></script>
+  <script src="javascript/mobileDropNav.js" type="text/javascript"></script>
+  <script src="javascript/podlazia.js" type="text/javascript"></script>
+</body>
+
+</html>
