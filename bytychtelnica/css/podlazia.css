@@ -1,7 +1,7 @@
 .mainImg{
-  width: 45%;
-  height: 45vw;
-  margin-top: 0;
+  width: 570px;
+  height: 570px;
+  margin: 0;
   background-size: cover !important;
   background-position: center;
   background-repeat: no-repeat;
@@ -18,15 +18,15 @@
   height: 30px !important;
 }
 .podlazByt{
-  margin-top: 250px;
+  margin-top: 230px;
   margin-left: auto;
   margin-right: auto;
-  width: 90vw;
+  width: 1160px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-#pp1{
+#pImg{
   width: 100%;
   height: 100%;
   position: absolute;
@@ -34,8 +34,8 @@
   left: 0;
 }
 .podlazImg{
-  width: 50vw;
-  height: 50vw;
+  width: 570px;
+  height: 570px;
   position: relative;
   z-index: 1;
 }
@@ -45,6 +45,36 @@
   background-color: red;
   position: absolute;
   z-index: 5;
+}
+.podlazTableBackground{
+  background-color: #B69D74;
+  margin-top: 20px;
+}
+.podlazTable{
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+  color: white;
+  width: 680px;
+  display: flex;
+  justify-content: space-between;
+}
+.podlazTable table{
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: separate;
+  border-spacing: 0.8vw;
+}
+.podlazTable tr{
+  border-bottom: 1px solid black;
+}
+.podlazTableBackground p{
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 32px;
+  padding: 20px 0;
+  margin: 0;
 }
 #highlighterP1{
   top: 30.4%;
@@ -155,4 +185,36 @@
   top: 53.8%;
   left: 13.7%;
   width: 5.7%;
+}
+
+@media only screen and (max-width: 1240px){
+  .podlazByt{
+    width: 92vw;
+  }
+  .mainImg{
+    width: 45vw;
+    height: 45vw;
+  }
+  .podlazImg{
+    width: 45vw;
+    height: 45vw;
+  }
+}
+@media only screen and (max-width: 768px){
+  .podlazByt{
+    flex-direction: column;
+    height: 1160px;
+    margin-top: 180px;
+  }
+  .mainImg{
+    width: 570px;
+    height: 570px;
+  }
+  .podlazImg{
+    width: 570px;
+    height: 570px;
+  }
+  .podlazTable{
+    width: 600px;
+  }
 }

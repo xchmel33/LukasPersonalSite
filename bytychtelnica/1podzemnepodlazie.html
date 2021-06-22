@@ -90,8 +90,51 @@
     <!-- Mobile site -->
 
     <div class="podlazByt">
+      <div id="mainImg" class="mainImg">
+        <div class="hoverArea" id="HA0" onmouseover="show1podpodlaz();" onmouseout="show1podpodlaz()" onclick="document.location=this.id+'1podpodlaz.html';return false;"></div>
+        <div class="hoverArea" id="HA1" onmouseover="show1nadpodlaz();" onmouseout="show1podpodlaz()" onclick="document.location=this.id+'1nadpodlaz.html';return false;"></div>
+        <div class="hoverArea" id="HA2" onmouseover="show2nadpodlaz();" onmouseout="show1podpodlaz()" onclick="document.location=this.id+'2nadpodlaz.html';return false;"></div>
+        <div class="hoverArea" id="HA3" onmouseover="show3nadpodlaz();" onmouseout="show1podpodlaz()" onclick="document.location=this.id+'3nadpodlaz.html';return false;"></div>
+        <div class="hoverArea" id="HA4" onmouseover="show4nadpodlaz();" onmouseout="show1podpodlaz()" onclick="document.location=this.id+'4nadpodlaz.html';return false;"></div>
+      </div>
+      <div class="podlazImg">
+        <img src="image/byty/pp1.jpg" alt="pp1" id="pImg">
+        <div id="highlighterP1" class="highlighter" onmouseover="highlightElement('P1')" onmouseout="unhighlightElement('P1')"></div>
+        <div id="highlighterP2" class="highlighter" onmouseover="highlightElement('P2')" onmouseout="unhighlightElement('P2')"></div>
+        <div id="highlighterP3" class="highlighter" onmouseover="highlightElement('P3')" onmouseout="unhighlightElement('P3')"></div>
+        <div id="highlighterP4" class="highlighter" onmouseover="highlightElement('P4')" onmouseout="unhighlightElement('P4')"></div>
+        <div id="highlighterP5" class="highlighter" onmouseover="highlightElement('P5')" onmouseout="unhighlightElement('P5')"></div>
+        <div id="highlighterP6" class="highlighter" onmouseover="highlightElement('P6')" onmouseout="unhighlightElement('P6')"></div>
+        <div id="highlighterP7" class="highlighter" onmouseover="highlightElement('P7')" onmouseout="unhighlightElement('P7')"></div>
+        <div id="highlighterP8" class="highlighter" onmouseover="highlightElement('P8')" onmouseout="unhighlightElement('P8')"></div>
+        <div id="highlighterP9" class="highlighter" onmouseover="highlightElement('P9')" onmouseout="unhighlightElement('P9')"></div>
+        <div id="highlighterP10" class="highlighter" onmouseover="highlightElement('P10')" onmouseout="unhighlightElement('P10')"></div>
+        <div id="highlighterP11" class="highlighter" onmouseover="highlightElement('P11')" onmouseout="unhighlightElement('P11')"></div>
+        <div id="highlighterP12" class="highlighter" onmouseover="highlightElement('P12')" onmouseout="unhighlightElement('P12')"></div>
+        <div id="highlighterP13" class="highlighter" onmouseover="highlightElement('P13')" onmouseout="unhighlightElement('P13')"></div>
+        <div id="highlighterP14" class="highlighter" onmouseover="highlightElement('P14')" onmouseout="unhighlightElement('P14')"></div>
+        <div id="highlighterP15" class="highlighter" onmouseover="highlightElement('P15')" onmouseout="unhighlightElement('P15')"></div>
+        <div id="highlighterP16" class="highlighter" onmouseover="highlightElement('P16')" onmouseout="unhighlightElement('P16')"></div>
+        <div id="highlighterP17" class="highlighter" onmouseover="highlightElement('P17')" onmouseout="unhighlightElement('P17')"></div>
+        <div id="highlighterP18" class="highlighter" onmouseover="highlightElement('P18')" onmouseout="unhighlightElement('P18')"></div>
+        <div id="highlighterP19" class="highlighter" onmouseover="highlightElement('P19')" onmouseout="unhighlightElement('P19')"></div>
+        <div id="highlighterP20" class="highlighter" onmouseover="highlightElement('P20')" onmouseout="unhighlightElement('P20')"></div>
+        <div id="highlighterP21" class="highlighter" onmouseover="highlightElement('P21')" onmouseout="unhighlightElement('P21')"></div>
+        <div id="highlighterP22" class="highlighter" onmouseover="highlightElement('P22')" onmouseout="unhighlightElement('P22')"></div>
+      </div>
+    </div>
+    <div class="podlazTableBackground">
+      <p>Dostupnosť</p>
       <div class="podlazTable">
         <table>
+
+          <head>
+            <tr>
+              <td>Názov</td>
+              <td>Miesto</td>
+              <td>Dostupnosť</td>
+            </tr>
+          </head>
           <tr id='P1' onmouseover="highlightElement('P1')" onmouseout="unhighlightElement('P1')">
             <td>Garážové státie</td>
             <td>P1</td>
@@ -147,6 +190,15 @@
             <td>P11</td>
             <td>voľné</td>
           </tr>
+        </table>
+        <table>
+          <head>
+            <tr>
+              <td>Názov</td>
+              <td>Miesto</td>
+              <td>Dostupnosť</td>
+            </tr>
+          </head>
           <tr id='P12' onmouseover="highlightElement('P12')" onmouseout="unhighlightElement('P12')">
             <td>Garážové státie</td>
             <td>P12</td>
@@ -203,31 +255,6 @@
             <td>voľné</td>
           </tr>
         </table>
-      </div>
-      <div class="podlazImg">
-        <img src="image/byty/pp1.jpg" alt="pp1" id="pp1">
-        <div id="highlighterP1" class="highlighter" onmouseover="highlightElement('P1')" onmouseout="unhighlightElement('P1')"></div>
-        <div id="highlighterP2" class="highlighter" onmouseover="highlightElement('P2')" onmouseout="unhighlightElement('P2')"></div>
-        <div id="highlighterP3" class="highlighter" onmouseover="highlightElement('P3')" onmouseout="unhighlightElement('P3')"></div>
-        <div id="highlighterP4" class="highlighter" onmouseover="highlightElement('P4')" onmouseout="unhighlightElement('P4')"></div>
-        <div id="highlighterP5" class="highlighter" onmouseover="highlightElement('P5')" onmouseout="unhighlightElement('P5')"></div>
-        <div id="highlighterP6" class="highlighter" onmouseover="highlightElement('P6')" onmouseout="unhighlightElement('P6')"></div>
-        <div id="highlighterP7" class="highlighter" onmouseover="highlightElement('P7')" onmouseout="unhighlightElement('P7')"></div>
-        <div id="highlighterP8" class="highlighter" onmouseover="highlightElement('P8')" onmouseout="unhighlightElement('P8')"></div>
-        <div id="highlighterP9" class="highlighter" onmouseover="highlightElement('P9')" onmouseout="unhighlightElement('P9')"></div>
-        <div id="highlighterP10" class="highlighter" onmouseover="highlightElement('P10')" onmouseout="unhighlightElement('P10')"></div>
-        <div id="highlighterP11" class="highlighter" onmouseover="highlightElement('P11')" onmouseout="unhighlightElement('P11')"></div>
-        <div id="highlighterP12" class="highlighter" onmouseover="highlightElement('P12')" onmouseout="unhighlightElement('P12')"></div>
-        <div id="highlighterP13" class="highlighter" onmouseover="highlightElement('P13')" onmouseout="unhighlightElement('P13')"></div>
-        <div id="highlighterP14" class="highlighter" onmouseover="highlightElement('P14')" onmouseout="unhighlightElement('P14')"></div>
-        <div id="highlighterP15" class="highlighter" onmouseover="highlightElement('P15')" onmouseout="unhighlightElement('P15')"></div>
-        <div id="highlighterP16" class="highlighter" onmouseover="highlightElement('P16')" onmouseout="unhighlightElement('P16')"></div>
-        <div id="highlighterP17" class="highlighter" onmouseover="highlightElement('P17')" onmouseout="unhighlightElement('P17')"></div>
-        <div id="highlighterP18" class="highlighter" onmouseover="highlightElement('P18')" onmouseout="unhighlightElement('P18')"></div>
-        <div id="highlighterP19" class="highlighter" onmouseover="highlightElement('P19')" onmouseout="unhighlightElement('P19')"></div>
-        <div id="highlighterP20" class="highlighter" onmouseover="highlightElement('P20')" onmouseout="unhighlightElement('P20')"></div>
-        <div id="highlighterP21" class="highlighter" onmouseover="highlightElement('P21')" onmouseout="unhighlightElement('P21')"></div>
-        <div id="highlighterP22" class="highlighter" onmouseover="highlightElement('P22')" onmouseout="unhighlightElement('P22')"></div>
       </div>
     </div>
 
@@ -422,7 +449,7 @@
   </script>
   <script src="javascript/dropNav.js" type="text/javascript"></script>
   <script src="javascript/mobileDropNav.js" type="text/javascript"></script>
-  <script src="javascript/podlazia.js" type="text/javascript"></script>
+  <script src="javascript/podlaziaByty.js" type="text/javascript"></script>
 </body>
 
 </html>
