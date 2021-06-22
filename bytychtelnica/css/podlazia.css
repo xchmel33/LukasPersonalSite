@@ -58,7 +58,7 @@
   width: 680px;
   display: flex;
   justify-content: space-between;
-  padding-bottom: 20px;
+  padding-bottom: 35px;
 }
 .podlazTable table{
   margin-left: auto;
@@ -212,7 +212,7 @@ td{
     height: 45vw;
   }
 }
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 1024px){
   .podlazByt{
     flex-direction: column;
     height: 1160px;
@@ -225,8 +225,5 @@ td{
   .podlazImg{
     width: 570px;
     height: 570px;
-  }
-  .podlazTable{
-    width: 600px;
   }
 }
