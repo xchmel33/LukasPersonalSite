@@ -58,15 +58,27 @@
   width: 680px;
   display: flex;
   justify-content: space-between;
+  padding-bottom: 20px;
 }
 .podlazTable table{
   margin-left: auto;
   margin-right: auto;
-  border-collapse: separate;
-  border-spacing: 0.8vw;
+  border-collapse: collapse;
+
 }
 .podlazTable tr{
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+.podlazTable tr:last-child{
+  border: none;
+}
+td{
+  height: 30px;
+  padding-right: 20px;
+}
+.podlazTable thead tr{
+  border: none;
+  background-color: #1F2839;
 }
 .podlazTableBackground p{
   text-align: center;
