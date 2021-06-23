@@ -1,0 +1,208 @@
+.mainImg{
+  background-image: url("../image/4nadpodlaz.jpg");
+}
+tr td:first-child{
+  color: black;
+}
+thead td:first-child{
+  color: white !important;
+}
+#highlighterP1{
+  background-color: #E00000;
+  top: 56.4%;
+  left: 7.4%;
+  width: 23%;
+  height: 15.6%;
+  clip-path: polygon(100% 0%, 18.5% 0%, 18.5% 41%, 0% 41%, 0% 100%, 100% 100%);
+}
+#highlighterP10{
+  background-color: #E00000;
+  left: 8.2%;
+  top: 56.8%;
+  width: 2.6%;
+  height: 5.1%;
+}
+#highlighterP2{
+  background-color: pink;
+  top: 55.4%;
+  left: 12.65%;
+  height: 22%;
+  width: 16.95%;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 60% 80%, 60% 100%, 0 100%);
+}
+#highlighterP11{
+  background-color: pink;
+  top: 74.6%;
+  left: 24.2%;
+  height: 3.4%;
+  width: 5.07%;
+}
+#highlighterP3{
+  background-color: yellow;
+  top: 55.4%;
+  left: 30.4%;
+  height: 22%;
+  width: 24.9%;
+  clip-path: polygon(100% 0%, 0 0, 0 81%, 55% 81%, 55% 100%, 100% 100%);
+}
+#highlighterP12{
+  background-color: yellow;
+  top: 74.75%;
+  left: 30.8%;
+  height: 3.4%;
+  width: 11.55%;
+}
+#highlighterP4{
+  background-color: lightblue;
+  top: 55.4%;
+  left: 56%;
+  height: 21.9%;
+  width: 32%;
+  clip-path: polygon(100% 0%, 0 0, 0 100%, 63.3% 100%, 63.3% 84%, 100% 84%);
+}
+#highlighterP13{
+  background-color: lightblue;
+  top: 74.8%;
+  left: 77.3%;
+  height: 3.4%;
+  width: 10.25%;
+}
+#highlighterP5{
+  background-color: #F5A962;
+  top: 27.65%;
+  left: 66.9%;
+  height: 27%;
+  width: 19.2%;
+  clip-path: polygon(0% 0%, 50% 0%, 50% 16.5%, 100% 16.5%, 100% 100%, 32% 100%, 32% 81.5%, 0% 81.5%);
+}
+#highlighterP14{
+  background-color: #F5A962;
+  top: 27%;
+  left: 77.8%;
+  height: 3.8%;
+  width: 8.3%;
+}
+#highlighterP6{
+  background-color: lime;
+  left: 45.3%;
+  top: 27.65%;
+  height: 21.95%;
+  width: 21%;
+  clip-path: polygon(100% 0, 54% 0%, 54% 20%, 0 20%, 0 100%, 100% 100%);
+}
+#highlighterP15{
+  background-color: lime;
+  top: 26.8%;
+  left: 46.05%;
+  height: 4%;
+  width: 9.2%;
+}
+#highlighterP7{
+  background-color: lime;
+  left: 51.5%;
+  top: 31.3%;
+  height: 15.7%;
+  width: 10.35%;
+}
+#highlighterP16{
+  background-color: lime;
+  top: 22.1%;
+  left: 30.5%;
+  height: 4.5%;
+  width: 7.5%;
+  clip-path: polygon(0% 0%, 100% 34%, 100% 100%, 0% 100%);
+}
+#highlighterP8{
+  background-color: grey;
+  left: 23.2%;
+  top: 36.6%;
+  height: 15.7%;
+  width: 10.3%;
+  clip-path: polygon(0% 0%, 44% 0%, 44% 19%, 100% 19%, 100% 100%, 0 100%);
+}
+#highlighterP17{
+  background-color: grey;
+  left: 28.5%;
+  top: 36.05%;
+  height: 2.7%;
+  width: 4.55%;
+}
+#highlighterP9{
+  background-color: cyan;
+  top: 36.6%;
+  left: 8.7%;
+  width: 14%;
+  height: 19.3%;
+  clip-path: polygon(100% 0, 100% 82%, 64% 82%, 64% 100%, 0 100%, 0 16%, 52% 16%, 52% 0%);
+}
+#highlighterP18{
+  background-color: cyan;
+  left: 8.7%;
+  top: 36.05%;
+  height: 2.7%;
+  width: 6.4%;
+}
+#highlighterP19{
+  background-color: #E00000;
+  left: 45%;
+  top: 51%;
+  width: 2.6%;
+  height: 3.7%;
+}
+#highlighterP20{
+  background-color: pink;
+  left: 23.15%;
+  top: 43%;
+  width: 6.4%;
+  height: 7.1%;
+}
+#highlighterP21{
+  background-color: yellow;
+  left: 39.2%;
+  top: 37.65%;
+  width: 5.35%;
+  height: 5.9%;
+}
+#highlighterP22{
+  background-color: lightblue;
+  left: 39.2%;
+  top: 37.65%;
+  width: 5.35%;
+  height: 5.9%;
+}
+#highlighterP23{
+  background-color: #F5A962;
+  left: 30.4%;
+  top: 37.65%;
+  width: 5.35%;
+  height: 5.9%;
+}
+#highlighterP24{
+  background-color: lime;
+  left: 30.4%;
+  top: 43.8%;
+  width: 5.35%;
+  height: 5.9%;
+}
+#highlighterP25{
+  background-color: lime;
+  left: 30.4%;
+  top: 28%;
+  width: 14.1%;
+  height: 8.9%;
+}
+#highlighterP26{
+  background-color: grey;
+  left: 36%;
+  top: 36.8%;
+  width: 2%;
+  height: 5.2%;
+}
+#highlighterP27{
+  background-color: cyan;
+  left: 45.1%;
+  top: 42.45%;
+  width: 2.8%;
+  height: 5%;
+
+}

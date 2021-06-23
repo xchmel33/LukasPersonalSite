@@ -1,0 +1,200 @@
+.mainImg{
+  background-image: url("../image/1nadpodlaz.jpg");
+}
+tr td:first-child{
+  color: black;
+}
+thead td:first-child{
+  color: white !important;
+}
+#highlighterP1{
+  background-color: #E00000;
+  top: 56.4%;
+  left: 7.4%;
+  width: 23%;
+  height: 15.6%;
+  clip-path: polygon(100% 0%, 18.5% 0%, 18.5% 41%, 0% 41%, 0% 100%, 100% 100%);
+}
+#highlighterP10{
+  background-color: #E00000;
+  left: 8.2%;
+  top: 56.8%;
+  width: 2.6%;
+  height: 5.1%;
+}
+#highlighterP2{
+  background-color: pink;
+  top: 51%;
+  left: 30.9%;
+  height: 21%;
+  width: 20.1%;
+  clip-path: polygon(0 25%, 0 100%, 36% 100%, 36% 75%, 76% 75%, 76% 61%, 100% 61%, 100% 0, 56% 0, 56% 25%);
+}
+#highlighterP11{
+  background-color: pink;
+  top: 64.7%;
+  left: 47.04%;
+  height: 2.7%;
+  width: 3.75%;
+}
+#highlighterP3{
+  background-color: yellow;
+  top: 51%;
+  left: 51.65%;
+  height: 15.6%;
+  width: 17.75%;
+  clip-path: polygon(100% 0%, 0 0, 0 81%, 55% 81%, 55% 100%, 100% 100%);
+}
+#highlighterP12{
+  background-color: yellow;
+  top: 64.7%;
+  left: 51.65%;
+  height: 2.7%;
+  width: 8.5%;
+}
+#highlighterP4{
+  background-color: lightblue;
+  top: 51%;
+  left: 70%;
+  height: 15.8%;
+  width: 22.7%;
+  clip-path: polygon(100% 0%, 0 0, 0 100%, 63.3% 100%, 63.3% 84%, 100% 84%);
+}
+#highlighterP13{
+  background-color: lightblue;
+  top: 65.2%;
+  left: 85.2%;
+  height: 2.3%;
+  width: 7.45%;
+}
+#highlighterP5{
+  background-color: #F5A962;
+  top: 31.3%;
+  left: 77.7%;
+  height: 19.3%;
+  width: 14%;
+  clip-path: polygon(0% 0%, 50% 0%, 50% 15%, 100% 15%, 100% 100%, 32% 100%, 32% 81.5%, 0% 81.5%);
+}
+#highlighterP14{
+  background-color: #F5A962;
+  top: 30.6%;
+  left: 85.6%;
+  height: 2.8%;
+  width: 6%;
+}
+#highlighterP6{
+  background-color: lime;
+  left: 62.3%;
+  top: 31.3%;
+  height: 15.7%;
+  width: 15%;
+  clip-path: polygon(100% 0, 53% 0%, 53% 19%, 0 19%, 0 100%, 100% 100%);
+}
+#highlighterP15{
+  background-color: lime;
+  top: 30.6%;
+  left: 62.7%;
+  height: 2.8%;
+  width: 6.7%;
+}
+#highlighterP7{
+  background-color: #FF1493;
+  left: 51.5%;
+  top: 31.3%;
+  height: 15.7%;
+  width: 10.35%;
+}
+#highlighterP16{
+  background-color: #FF1493;
+  display: none;
+}
+#highlighterP8{
+  background-color: grey;
+  left: 23.2%;
+  top: 36.6%;
+  height: 15.7%;
+  width: 10.3%;
+  clip-path: polygon(0% 0%, 44% 0%, 44% 19%, 100% 19%, 100% 100%, 0 100%);
+}
+#highlighterP17{
+  background-color: grey;
+  left: 28.5%;
+  top: 36.05%;
+  height: 2.7%;
+  width: 4.55%;
+}
+#highlighterP9{
+  background-color: cyan;
+  top: 36.6%;
+  left: 8.7%;
+  width: 14%;
+  height: 19.3%;
+  clip-path: polygon(100% 0, 100% 82%, 64% 82%, 64% 100%, 0 100%, 0 16%, 52% 16%, 52% 0%);
+}
+#highlighterP18{
+  background-color: cyan;
+  left: 8.7%;
+  top: 36.05%;
+  height: 2.7%;
+  width: 6.4%;
+}
+#highlighterP19{
+  background-color: #E00000;
+  left: 51.5%;
+  top: 43.3%;
+  width: 3.8%;
+  height: 3.8%;
+}
+#highlighterP20{
+  background-color: pink;
+  left: 51.5%;
+  top: 39.3%;
+  width: 3.8%;
+  height: 3.8%;
+}
+#highlighterP21{
+  background-color: yellow;
+  left: 51.5%;
+  top: 35.3%;
+  width: 3.8%;
+  height: 3.8%;
+}
+#highlighterP22{
+  background-color: lightblue;
+  left: 51.5%;
+  top: 31.3%;
+  width: 3.8%;
+  height: 3.8%;
+}
+#highlighterP23{
+  background-color: #F5A962;
+  left: 58%;
+  top: 31.3%;
+  width: 3.8%;
+  height: 3.8%;
+}
+#highlighterP24{
+  background-color: lime;
+  left: 58%;
+  top: 35.3%;
+  width: 3.8%;
+  height: 3.8%;
+}
+#highlighterP25{
+  background-color: #FF1493;
+}
+#highlighterP26{
+  background-color: grey;
+  left: 58%;
+  top: 39.3%;
+  width: 3.8%;
+  height: 3.8%;
+}
+#highlighterP27{
+  background-color: cyan;
+  left: 58%;
+  top: 43.3%;
+  width: 3.8%;
+  height: 3.8%;
+
+}

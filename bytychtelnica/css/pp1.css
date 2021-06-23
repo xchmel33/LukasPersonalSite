@@ -65,7 +65,6 @@
   margin-left: auto;
   margin-right: auto;
   border-collapse: collapse;
-
 }
 .podlazTable tr{
   border-bottom: 2px solid rgba(255, 255, 255, 0.3);
@@ -73,9 +72,12 @@
 .podlazTable tr:last-child{
   border: none;
 }
+thead{
+  font-weight: bold;
+}
 td{
   height: 30px;
-  padding-right: 20px;
+  padding: 5px 20px;
 }
 .podlazTable thead tr{
   border: none;
@@ -86,7 +88,7 @@ td{
   color: white;
   font-weight: bold;
   font-size: 32px;
-  padding: 20px 0;
+  padding: 40px 0;
   margin: 0;
 }
 #highlighterP1{
