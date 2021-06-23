@@ -1,0 +1,20 @@
+.background{
+  width: 80vw;
+  height: 45vw;
+  margin: 5vh 10vw;
+  margin-bottom: 20px;
+}
+#backgroundImage{
+  width: 80vw;
+  height: 45vw;
+}
+#heading{
+  height: 5vh;
+  padding: 2vh;
+  margin-top: 15vh;
+  text-align: center;
+}
+#heading p{
+  font-size: 48px;
+  color: #B69D74;
+}

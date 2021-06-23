@@ -1,6 +1,5 @@
 /* ********** DESKTOP ********** */
-
-body{
+body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -9,31 +8,36 @@ body{
   font-family: "Intro Light Alt", Sans-serif;
 }
 
-#header{
+#header {
   background-color: #B69D74;
   margin: 0;
   padding: 0;
   opacity: 0.9;
   width: 100vw;
+  height: 15vh;
   position: absolute;
   top: 0;
   right: 0;
 }
 
-#header .content{
-  height: 120px;
+#header .content {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.content{
-  padding: 40px 100px;
+.content {
+  padding: 2.5vh 100px;
 }
-.background{
+
+.background {
   position: relative;
   width: 100vw;
   height: 100vh;
 }
 
-#backgroundImage{
+#backgroundImage {
   position: absolute;
   top: 0;
   z-index: -1;
@@ -43,53 +47,84 @@ body{
   transition: opacity 1s;
   position: relative;
 }
-#backgroundImage.fadeOut{
+
+#backgroundImage.fadeOut {
   opacity: 0;
 }
 
-.navigation{
+.navigation {
   display: flex;
-  justify-content: flex-start;
-  vertical-align: middle;
+  justify-content: space-between;
+  align-items: center;
+  width: 650px;
   list-style-type: none;
 }
-.navlogo{
-  width: 120px;
-  min-width: 3vw;
+
+.navlogo {
+  width: 10vh;
   float: left;
 }
-.navlogo:hover, .oProjekte a:hover, .galeria a:hover, .kontakt a:hover, .mFHli:hover {
+
+.navlogo:hover, .oProjekte a:hover, .galeria a:hover, .kontakt a:hover, .mFHli:hover, #hidden li a:hover {
   filter: contrast(70%);
 }
-.navigation li{
-  margin-right: 2.5%;
-  margin-top: 5px;
-}
-.navText{
-  position: relative;
-  bottom: 30px;
-}
-.navigation li a{
+
+.navigation li a {
   color: white;
   font-weight: bold;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   /* font ! */
 }
-.navIcon{
-  height: 70px;
+
+.navIcon {
+  height: 40px;
+  margin-right: 5px;
 }
 
-#switchbutton1{
+#hiddenHover {
+  width: 150px;
+  height: 2vh;
   position: absolute;
-  right: 0;
-  top: 50%;
+  top: 8vh;
+  margin-left: 210px;
 }
-#switchbutton2{
+
+#switchbutton1 {
   position: absolute;
-  left: 0;
+  right: 0.4%;
   top: 50%;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 64px;
+  font-weight: 400;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
 }
-#dot1, #dot2{
+
+#switchbutton2 {
+  position: absolute;
+  left: 0.4%;
+  top: 50%;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 64px;
+  font-weight: 400;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+#dot1, #dot2 {
   height: 10px;
   width: 10px;
   background-color: #bbb;
@@ -99,48 +134,49 @@ body{
   bottom: 5%;
   left: 49%;
 }
-#dot2{
+
+#dot2 {
   margin-left: 20px;
 }
-.rotate90{
+
+.rotate90 {
   transform: rotate(90deg) scaleY(1.7);
   display: inline-block;
   margin-left: 10px;
 }
 
-.bytyNav{
-  height: 30px;
-  filter: none;
-}
-
-#hidden{
+#hidden {
   display: none;
   list-style-type: none;
   background-color: white;
-  position: absolute;
-  left: 513px;
-  top: 135px;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 25px;
   padding-right: 10px;
-  width: 172px;
-}
-#hidden li{
-  margin-bottom: 10px;
-}
-#hidden li a{
-  color: black;
+  width: 250px;
+  position: absolute;
+  top: 9.5vh;
+  margin-left: 210px;
 }
 
-.projContent{
+#hidden li {
+  margin-bottom: 10px;
+}
+
+#hidden li a {
+  color: black;
+  font-size: 14px;
+}
+
+.projContent {
   width: 90vw;
   max-width: 1280px;
   display: block;
   margin: 40px auto;
   z-index: 5;
 }
-#projTriangle{
+
+#projTriangle {
   width: 0;
   height: 0;
   min-width: 0 !important;
@@ -148,14 +184,16 @@ body{
   border-width: 18vw 0 0 100vw;
   border-color: transparent transparent transparent #B69D74;
 }
-#projIconsUl{
+
+#projIconsUl {
   display: flex;
   justify-content: space-between;
   filter: brightness(0) invert(1);
   position: relative;
   bottom: 1vw;
 }
-#projIconsUl li{
+
+#projIconsUl li {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -165,22 +203,27 @@ body{
   font-size: 18px;
   font-weight: 800;
 }
-#financovanie{
+
+#financovanie {
   margin-top: 100px;
 }
-#projBackground{
+
+#projBackground {
   background-color: #B69D74;
   position: relative;
   bottom: 40px;
 }
-.projIcon{
+
+.projIcon {
   width: 200px;
 }
-#map{
+
+#map {
   height: 90vw;
   max-height: 1024px;
 }
-#text{
+
+#text {
   margin-top: 250px;
   margin-bottom: 10px;
   text-align: center;
@@ -192,16 +235,14 @@ body{
   font-style: italic;
 }
 
-
-@media only screen and (max-width: 1120px){
-  .navigation li{
+@media only screen and (max-width: 1120px) {
+  .navigation li {
     margin-right: 0;
   }
 }
 
 /* ********** MOBILE ********** */
-
-.mobile-wrapper{
+.mobile-wrapper {
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -210,7 +251,7 @@ body{
   height: 100%;
 }
 
-#mobileHeader{
+#mobileHeader {
   background-color: #B69D74;
   margin: 0;
   padding: 0;
@@ -222,20 +263,22 @@ body{
   z-index: 1;
 }
 
-#mobileHeader .content{
+#mobileHeader .content {
   height: 80px;
   position: relative;
 }
 
-#mobileImg{
+#mobileImg {
   display: none;
 }
-.menuSideBar{
+
+.menuSideBar {
   height: 80px;
   position: absolute;
   right: 40px;
 }
-#mobileSideBar{
+
+#mobileSideBar {
   position: absolute;
   right: -100%;
   top: 0;
@@ -249,22 +292,27 @@ body{
   height: 100vh;
   background-color: white;
 }
-#mobileSideBar.showMBSB{
+
+#mobileSideBar.showMBSB {
   right: 0;
 }
-#mobileSideBar li{
+
+#mobileSideBar li {
   margin-bottom: 16px;
   list-style-type: none;
 }
-#mobileSideBar li a:hover{
+
+#mobileSideBar li a:hover {
   opacity: 0.6;
 }
-#mobileSideBar li a{
+
+#mobileSideBar li a {
   font-size: 24px;
   text-decoration: none;
   color: black;
 }
-#mobileHidden{
+
+#mobileHidden {
   list-style-type: none;
   display: none;
   position: relative;
@@ -272,15 +320,18 @@ body{
   font-weight: normal;
   margin-bottom: 20px
 }
-#mobileHidden li{
+
+#mobileHidden li {
   margin-bottom: 10px;
   font-size: 16px;
 }
-.mobileBackground{
+
+.mobileBackground {
   display: none;
   width: 100%;
 }
-#mobileFrontHeader{
+
+#mobileFrontHeader {
   background-color: #B69D74;
   margin: 0;
   padding: 0;
@@ -291,85 +342,106 @@ body{
   right: 0;
   z-index: 1;
 }
-#mobileFrontHeader .content{
-  height: 160px;
+
+#mobileFrontHeader .content {
+  height: 8vh;
   display: block;
+  margin: 4vh 10vw;
+  padding: 0;
+  width: 80vw;
 }
-#mobileFrontHeader ul{
+
+#mobileFrontHeader ul {
   display: flex;
   justify-content: space-between;
   margin: 0;
   padding: 0;
-  margin-top: 20px;
+  width: 80vw;
 }
-#mobileFrontHeader li{
+
+#mobileFrontHeader li {
   list-style-type: none;
   text-align: center;
 }
-#mobileFrontHeader li a{
+
+#mobileFrontHeader li a {
   color: white;
   font-weight: bold;
   text-decoration: none;
 }
-.mFHli{
+
+.mFHli {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 125px;
-}
-.mFHimg{
-  height: 100px;
-  position: relative;
+  align-items: center;
+  height: 8vh;
 }
 
-@media only screen and (min-width: 1640px){
-  #projIconsUl{
+.mFHimg {
+  height: 6.5vh;
+}
+
+@media only screen and (min-width: 1640px) {
+  #projIconsUl {
     bottom: 3vw;
   }
 }
 
-@media only screen and (max-width: 1024px){
-  #header{
+@media only screen and (max-width: 1024px) {
+  #header {
     display: none !important;
   }
-  #mobileHeader{
+
+  #mobileHeader {
     display: block !important;
   }
-  .background{
+
+  .background {
     display: none;
   }
-  #mobileImg{
+
+  #mobileImg {
     display: block;
   }
-  .navlogo{
+
+  .navlogo {
     width: 80px;
   }
-  .mobileBackground{
+
+  .mobileBackground {
     display: block;
   }
-  #mobileFrontHeader{
+
+  #mobileFrontHeader {
     display: block;
   }
-  .projContent{
+
+  .projContent {
     width: 95vw;
   }
-  #map{
+
+  #map {
     height: 95vw;
   }
-  #text{
+
+  #text {
     width: 80vw;
     margin-top: 200px;
   }
-  #projIconsUl{
+
+  #projIconsUl {
     flex-direction: column;
     align-items: center;
     bottom: 5vw;
   }
-  #projIconsUl li{
+
+  #projIconsUl li {
     width: 90vw;
     margin-bottom: 40px;
   }
-  .projIcon{
+
+  .projIcon {
     width: 200px;
   }
 }
