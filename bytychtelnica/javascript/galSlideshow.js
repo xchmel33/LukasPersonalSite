@@ -11,16 +11,20 @@ var images = ["image/vizualizacie/A_Photo - 1.jpg",
 var dotID = "gDot0";
 
 function nextBckImage() {
+  if (currentIndex == 7){
+    dotID = dotID.substr(0,4) + currentIndex;
+    document.getElementById(dotID).style.backgroundColor = "#000";
+    document.getElementById(dotID).style.opacity = "0.2";
+    currentIndex = 0;
+  }
   currentIndex++;
   document.getElementById('backgroundImage').src = images[currentIndex];
   dotID = dotID.substr(0,4) + currentIndex;
   document.getElementById(dotID).style.backgroundColor = "blue";
   document.getElementById(dotID).style.opacity = "1";
+  currentIndex--;
   dotID = dotID.substr(0,4) + currentIndex;
+  currentIndex++;
   document.getElementById(dotID).style.backgroundColor = "#000";
   document.getElementById(dotID).style.opacity = "0.2";
-  if (currentIndex == 7){
-    currentIndex = 0;
-  }
-  console.log(currentIndex);
 }
