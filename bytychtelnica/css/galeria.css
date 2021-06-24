@@ -1,24 +1,135 @@
-.background{
+@font-face {
+  font-family: "Neue Einstellung";
+  src: url("../fonts/NeueEin.eot");
+  src: url("../fonts/NeueEin2.eot") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/51fdf8021065497210ca54837e1601e9.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/51fdf8021065497210ca54837e1601e9.woff") format("woff"), url("https://db.onlinewebfonts.com/t/51fdf8021065497210ca54837e1601e9.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/51fdf8021065497210ca54837e1601e9.svg#Neue Einstellung") format("svg");
+}
+
+@import url(//db.onlinewebfonts.com/c/51fdf8021065497210ca54837e1601e9?family=Neue+Einstellung);
+
+body {
+  background-size: cover !important;
+  background-color: #FFFFFF;
+}
+
+#header {
+  opacity: 1 !important;
+  display: block;
+  z-index: 1;
+}
+
+.background {
   width: 80vw;
   height: 45vw;
-  margin: 5vh 10vw;
-  margin-bottom: 20px;
+  margin: 20px 10vw;
 }
-#backgroundImage{
+
+#backgroundImage {
   width: 80vw;
   height: 45vw;
 }
-#heading{
-  height: 5vh;
+
+.gDots{
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+  height: 10px;
+  position: absolute;
+  bottom: 5%;
+  left: 46%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.gDots a{
+  height: 10px;
+  width: 10px;
+}
+
+#gDot0, #gDot1, #gDot2, #gDot3, #gDot4, #gDot5, #gDot6, #gDot7 {
+  height: 10px;
+  width: 10px;
+  background-color: blue;
+  opacity: 1;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  align-items: center;
+}
+
+#heading {
   padding: 2vh;
-  margin-top: 15vh;
+  margin-top: 17vh;
   text-align: center;
 }
-#heading p{
+
+h2 {
+  font-family: "Intro Light Alt", Sans-serif;
+  font-style: normal;
+  spacing: 1;
+  font-weight: 600;
   font-size: 48px;
   color: #B69D74;
+  margin: 0;
 }
-.form{
-  text-align: center;
-  margin-top: 12vh;
+
+#heading p {
+  font-family: "Intro Light Alt", Sans-serif;
+  font-style: normal;
+  spacing: 1;
+  font-weight: 900;
+  font-size: 64px;
+  color: #B69D74;
+  margin: 10px;
+}
+
+#heading p:first-child {
+  font-family: "Intro Light Alt", Sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #B69D74;
+  letter-spacing: 12px;
+}
+
+/* form */
+.form {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70vw;
+  margin-top: 2vh;
+  color: #1F2839;
+}
+
+.form label {
+  text-transform: uppercase;
+  font-family: "Neue Einstellung", sans-serif;
+}
+
+.formSubmit {
+  font-family: "Neue Einstellung", sans-serif;
+  background-color: #1F2839;
+  border: none;
+  color: white;
+  font-size: 16px;
+  height: 60px;
+  width: 240px;
+  text-transform: uppercase;
+}
+
+.formInput {
+  font-family: "Neue Einstellung", sans-serif;
+  border: none;
+  height: 40px;
+  width: 70vw;
+  font-size: 16px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+#mess{
+  height: 200px;
+}
+.hiddenE{
+  display: none;
+  color: red;
+  font-family: sans-serif;
 }

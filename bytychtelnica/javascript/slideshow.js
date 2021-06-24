@@ -10,12 +10,16 @@ function slideShow() {
       document.getElementById('backgroundImage').src = "image/bytyBcg1.jpg";
       document.getElementById('backgroundImage').className = "";
       document.getElementById('dot1').style.backgroundColor = "blue";
-      document.getElementById('dot2').style.backgroundColor = "#bbb";
+      document.getElementById('dot1').style.opacity = "1";
+      document.getElementById('dot2').style.backgroundColor = "#000";
+      document.getElementById('dot2').style.opacity = "0.2";
     } else {
       document.getElementById('backgroundImage').src = "image/bytyBcg2.jpg";
       document.getElementById('backgroundImage').className = "";
-      document.getElementById('dot1').style.backgroundColor = "#bbb";
+      document.getElementById('dot1').style.backgroundColor = "#000";
+      document.getElementById('dot1').style.opacity = "0.2";
       document.getElementById('dot2').style.backgroundColor = "blue";
+      document.getElementById('dot2').style.opacity = "1";
       currentIndex = -1;
     }
   }, 1000);

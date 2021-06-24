@@ -6,6 +6,9 @@
   <title>bytychtelnica - bytychtelnica.sk</title>
   <link rel="stylesheet" href="css/master.css">
   <link rel="stylesheet" href="css/galeria.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
 </head>
 
 <body id="mainBody">
@@ -54,53 +57,62 @@
       </div>
     </div>
     <div id="heading">
-      <p>Galeria</p>
+      <h2>GALÉRIA</h2>
     </div>
     <div class="background">
       <img src="image/bytyBcg1.jpg" alt="logo" id="backgroundImage">
-      <button type="button" id="switchbutton1" onclick="nextBckImage()">></button>
-      <button type="button" id="switchbutton2" onclick="nextBckImage()"><</button>
-          <span id="dot1" onclick="nextBckImage()"></span>
-          <span id="dot2" onclick="nextBckImage()"></span>
+      <a href="#" id="switchbutton1" onclick="nextBckImage()">></a>
+      <a href="#" id="switchbutton2" onclick="nextBckImage()"><</a>
+      <div class="gDots">
+        <a href="#"><span  role="button" id="gDot0" onclick="nextBckImage()"></span></a>
+        <a href="#"><span  role="button" id="gDot1" onclick="nextBckImage()"></span></a>
+        <a href="#"><span  role="button" id="gDot2" onclick="nextBckImage()"></span></a>
+        <a href="#"><span  role="button" id="gDot3" onclick="nextBckImage()"></span></a>
+        <a href="#"><span  role="button" id="gDot4" onclick="nextBckImage()"></span></a>
+        <a href="#"><span  role="button" id="gDot5" onclick="nextBckImage()"></span></a>
+        <a href="#"><span  role="button" id="gDot6" onclick="nextBckImage()"></span></a>
+        <a href="#"><span  role="button" id="gDot7" onclick="nextBckImage()"></span></a>
+      </div>
     </div>
 
 
     <!-- Mobile site -->
-    <img src="image/mobileBackground.jpg" class="mobileBackground">
-    <div id="mobileFrontHeader">
+    <div id="mobileHeader">
       <div class="content">
-        <ul>
-          <li>
-            <div class="mFHli">
-              <img src="image/oProjekteIcon.JPG" class="mFHimg" onclick="document.location=this.id+'o-projekte.html';return false;">
-              <a href="o-projekte.html">O PROJEKTE</a>
-            </div>
-          </li>
-          <li>
-            <div class="mFHli">
-              <img src="image/BytyIcon.JPG" class="mFHimg" onclick="document.location=this.id+'byty.html';return false;">
-              <a href="byty.html">BYTY</a>
-            </div>
-          </li>
-          <li>
-            <div class="mFHli">
-              <img src="image/GaleriaIcon.JPG" class="mFHimg" onclick="document.location=this.id+'galeria.html';return false;">
-              <a href="galeria.html">GALÉRIA</a>
-            </div>
-          </li>
-          <li>
-            <div class="mFHli">
-              <img src="image/KontaktIcon.JPG" class="mFHimg" onclick="document.location=this.id+'kontakt.html';return false;">
-              <a href="kontakt.html">KONTAKT</a>
-            </div>
-          </li>
-        </ul>
+        <a href="index.html">
+          <img class="navlogo" src="image/logo.jpg" alt="logo">
+        </a>
+        <img id="menuSB" class="menuSideBar" src="image/sideMenu.PNG" alt="side menu">
       </div>
+    </div>
+    <div id="mobileSideBar">
+      <ul>
+        <li>
+          <a href="o-projekte.html">O PROJEKTE</a>
+        </li>
+        <li>
+          <a href="byty.html">BYTY</a> <a href="#" id="rotate180" class="rotate90" onclick="showMobileDropNav()">></a>
+        </li>
+        <ul id="mobileHidden">
+          <li><a href="1podzemnepodlazie.html">1. PODZEMNÉ PODLAŽIE</a></li>
+          <li><a href="1nadzemnepodlazie.html">1. NADZEMNÉ PODLAŽIE</a></li>
+          <li><a href="2nadzemnepodlazie.html">2. NADZEMNÉ PODLAŽIE</a></li>
+          <li><a href="3nadzemnepodlazie.html">3. NADZEMNÉ PODLAŽIE</a></li>
+          <li><a href="4nadzemnepodlazie.html">4. NADZEMNÉ PODLAŽIE</a></li>
+        </ul>
+        <li>
+          <a href="galeria.html">GALERIA</a>
+        </li>
+        <li>
+          <a href="kontakt.html">KONTAKT</a>
+        </li>
+      </ul>
     </div>
     <!-- Mobile site -->
 
   </div>
-  <script src="javascript/slideshow.js" type="text/javascript"></script>
+  <script src="javascript/mobileDropNav.js" type="text/javascript"></script>
+  <script src="javascript/galSlideshow.js" type="text/javascript"></script>
   <script src="javascript/dropNav.js" type="text/javascript"></script>
 </body>
 

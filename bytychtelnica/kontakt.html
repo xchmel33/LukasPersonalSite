@@ -6,6 +6,7 @@
   <title>bytychtelnica - bytychtelnica.sk</title>
   <link rel="stylesheet" href="css/master.css">
   <link rel="stylesheet" href="css/galeria.css">
+  <link href="//db.onlinewebfonts.com/c/51fdf8021065497210ca54837e1601e9?family=Neue+Einstellung" rel="stylesheet" type="text/css" />
 </head>
 
 <body id="mainBody">
@@ -58,60 +59,87 @@
       <p>+421 911 155 544</p>
     </div>
     <div class="form">
-      <form action="/kontakt/#wpcf7-f402-p44-o1" method="post" class="wpcf7-form init" novalidate="novalidate" data-status="init">
-      <div style="display: none;">
-      <input type="hidden" name="_wpcf7" value="402">
-      <input type="hidden" name="_wpcf7_version" value="5.4.1">
-      <input type="hidden" name="_wpcf7_locale" value="sk_SK">
-      <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f402-p44-o1">
-      <input type="hidden" name="_wpcf7_container_post" value="44">
-      <input type="hidden" name="_wpcf7_posted_data_hash" value="">
-      </div>
-      <p><label> Vaše meno<br>
-          <span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false"></span> </label></p>
-      <p><label> Váš email<br>
-          <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false"></span> </label></p>
-      <p><label> Vaša správa<br>
-          <span class="wpcf7-form-control-wrap your-message"><grammarly-extension data-grammarly-shadow-root="true" style="position: absolute; top: 0px; left: 0px; pointer-events: none;" class="cGcvT"></grammarly-extension><grammarly-extension data-grammarly-shadow-root="true" style="mix-blend-mode: darken; position: absolute; top: 0px; left: 0px; pointer-events: none;" class="cGcvT"></grammarly-extension><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" spellcheck="false"></textarea></span> </label></p>
-      <p><input type="submit" value="Odoslať" class="wpcf7-form-control wpcf7-submit" aria-invalid="false"><span class="ajax-loader"></span></p>
-      <div class="wpcf7-response-output" aria-hidden="true"></div></form>
+      <form name="frm" onsubmit="form_action()" method="post">
+        <p>
+          <label> Vaše meno<br></label>
+          <input id="subj1" class="formInput" type="text" name="your-name" value="" size="100">
+          <span id=subj1E class="hiddenE">POLE JE POVINNÉ !</span>
+        </p>
+        <p>
+          <label> Váš email<br> </label>
+          <input id="subj2" class="formInput" type="email" name="your-email" value="" size="100">
+          <span id=subj1E class="hiddenE">POLE JE POVINNÉ !</span>
+        </p>
+        <p>
+          <label> Vaša správa<br></label>
+          <textarea class="formInput" id="mess" name="your-message" cols="93" rows="10"></textarea>
+          <span id=messE class="hiddenE">POLE JE POVINNÉ !</span>
+        </p>
+        <p>
+          <input class="formSubmit" type="submit" value="Odoslať">
+        </p>
+      </form>
     </div>
 
     <!-- Mobile site -->
-    <img src="image/mobileBackground.jpg" class="mobileBackground">
-    <div id="mobileFrontHeader">
+    <div id="mobileHeader">
       <div class="content">
-        <ul>
-          <li>
-            <div class="mFHli">
-              <img src="image/oProjekteIcon.JPG" class="mFHimg" onclick="document.location=this.id+'o-projekte.html';return false;">
-              <a href="o-projekte.html">O PROJEKTE</a>
-            </div>
-          </li>
-          <li>
-            <div class="mFHli">
-              <img src="image/BytyIcon.JPG" class="mFHimg" onclick="document.location=this.id+'byty.html';return false;">
-              <a href="byty.html">BYTY</a>
-            </div>
-          </li>
-          <li>
-            <div class="mFHli">
-              <img src="image/GaleriaIcon.JPG" class="mFHimg" onclick="document.location=this.id+'galeria.html';return false;">
-              <a href="galeria.html">GALÉRIA</a>
-            </div>
-          </li>
-          <li>
-            <div class="mFHli">
-              <img src="image/KontaktIcon.JPG" class="mFHimg" onclick="document.location=this.id+'kontakt.html';return false;">
-              <a href="kontakt.html">KONTAKT</a>
-            </div>
-          </li>
-        </ul>
+        <a href="index.html">
+          <img class="navlogo" src="image/logo.jpg" alt="logo">
+        </a>
+        <img id="menuSB" class="menuSideBar" src="image/sideMenu.PNG" alt="side menu">
       </div>
+    </div>
+    <div id="mobileSideBar">
+      <ul>
+        <li>
+          <a href="o-projekte.html">O PROJEKTE</a>
+        </li>
+        <li>
+          <a href="byty.html">BYTY</a> <a href="#" id="rotate180" class="rotate90" onclick="showMobileDropNav()">></a>
+        </li>
+        <ul id="mobileHidden">
+          <li><a href="1podzemnepodlazie.html">1. PODZEMNÉ PODLAŽIE</a></li>
+          <li><a href="1nadzemnepodlazie.html">1. NADZEMNÉ PODLAŽIE</a></li>
+          <li><a href="2nadzemnepodlazie.html">2. NADZEMNÉ PODLAŽIE</a></li>
+          <li><a href="3nadzemnepodlazie.html">3. NADZEMNÉ PODLAŽIE</a></li>
+          <li><a href="4nadzemnepodlazie.html">4. NADZEMNÉ PODLAŽIE</a></li>
+        </ul>
+        <li>
+          <a href="galeria.html">GALERIA</a>
+        </li>
+        <li>
+          <a href="kontakt.html">KONTAKT</a>
+        </li>
+      </ul>
     </div>
     <!-- Mobile site -->
 
   </div>
+  <script type="text/javascript">
+    function form_action() {
+      var subject1 = document.getElementById("subj1").value;
+      var subject2 = document.getElementById("subj2").value;
+      var body = document.getElementById("mess").value;
+      var ok = true;
+      if (subject1 == ""){
+        document.getElementById('subj1E').style.display = "block";
+        ok = false;
+      }
+      if (subject2 == ""){
+        document.getElementById('subj2E').style.display = "block";
+        ok = false;
+      }
+      if (body == ""){
+        document.getElementById('messE').style.display = "block";
+        ok = false;
+      }
+      if (ok){
+        document.frm.action = "mailto:chmelolukas@gmail.com?subject=" + subject + "&body=" + body
+      }
+    }
+  </script>
+  <script src="javascript/mobileDropNav.js" type="text/javascript"></script>
   <script src="javascript/slideshow.js" type="text/javascript"></script>
   <script src="javascript/dropNav.js" type="text/javascript"></script>
 </body>

@@ -1,3 +1,30 @@
+@font-face {
+  font-family: "Intro Light Alt";
+  font-display: auto;
+  font-fallback: Helvetica;
+  font-weight: 100;
+  src: url("../fonts/Intro-Light-Alt.otf") format('OpenType');
+}
+
+@font-face {
+  font-family: 'w3tc';
+  src: url('https://www.bytychtelnica.sk/wp-content/plugins/w3-total-cache/pub/fonts/w3tc.eot');
+  src: url('https://www.bytychtelnica.sk/wp-content/plugins/w3-total-cache/pub/fonts/w3tc.eot?#iefix') format('embedded-opentype'),
+    url('https://www.bytychtelnica.sk/wp-content/plugins/w3-total-cache/pub/fonts/w3tc.woff') format('woff'),
+    url('https://www.bytychtelnica.sk/wp-content/plugins/w3-total-cache/pub/fonts/w3tc.ttf') format('truetype'),
+    url('https://www.bytychtelnica.sk/wp-content/plugins/w3-total-cache/pub/fonts/w3tc.svg#w3tc') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neue Einstellung";
+  src: url("//db.onlinewebfonts.com/t/51fdf8021065497210ca54837e1601e9.eot");
+  src: url("//db.onlinewebfonts.com/t/51fdf8021065497210ca54837e1601e9.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/51fdf8021065497210ca54837e1601e9.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/51fdf8021065497210ca54837e1601e9.woff") format("woff"), url("//db.onlinewebfonts.com/t/51fdf8021065497210ca54837e1601e9.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/51fdf8021065497210ca54837e1601e9.svg#Neue Einstellung") format("svg");
+}
+
+@import url(//db.onlinewebfonts.com/c/51fdf8021065497210ca54837e1601e9?family=Neue+Einstellung);
+
 /* ********** DESKTOP ********** */
 body {
   margin: 0;
@@ -5,7 +32,8 @@ body {
   overflow-x: hidden;
   background-image: url("../image/backgroundPattern.jpg");
   background-size: cover;
-  font-family: "Intro Light Alt", Sans-serif;
+  font-family: Sans-serif;
+  opacity: 1.1;
 }
 
 #header {
@@ -28,7 +56,7 @@ body {
 }
 
 .content {
-  padding: 2.5vh 100px;
+  padding: 2.5vh 10vh;
 }
 
 .background {
@@ -99,13 +127,11 @@ body {
   background: none;
   border: none;
   color: white;
-  font-size: 64px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 28px;
   font-weight: 400;
-  font-style: normal;
-  font-variant: normal;
-  line-height: 1;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
+  transform: scale(0.7, 1.6);
+  text-decoration: none;
 }
 
 #switchbutton2 {
@@ -115,19 +141,18 @@ body {
   background: none;
   border: none;
   color: white;
-  font-size: 64px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 28px;
   font-weight: 400;
-  font-style: normal;
-  font-variant: normal;
-  line-height: 1;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
+  transform: scale(0.7, 1.6);
+  text-decoration: none;
 }
 
 #dot1, #dot2 {
   height: 10px;
   width: 10px;
-  background-color: #bbb;
+  background-color: #000;
+  opacity: 0.2;
   border-radius: 50%;
   display: inline-block;
   position: absolute;
@@ -221,18 +246,40 @@ body {
 #map {
   height: 90vw;
   max-height: 1024px;
+  margin-top: 0;
 }
 
 #text {
-  margin-top: 250px;
-  margin-bottom: 10px;
+  margin-top: 25vh;
+  margin-bottom: 5vh;
   text-align: center;
   font-family: "Intro Light Alt", Sans-serif;
-  font-size: 20px;
+  font-size: 28px;
   font-weight: 700;
   line-height: 1.5em;
   letter-spacing: 1.1px;
   font-style: italic;
+  color: #1F2839
+}
+.iconText{
+  font-family: "Neue Einstellung", sans-serif;
+  font-weight: 600;
+  margin-bottom: 2vh;
+}
+#lokalita{
+  font-family: "Intro Light Alt", Sans-serif;
+  background-color: #B69D74;
+  color: white;
+  text-align: center;
+  font-weight: 600;
+  height: 6vh+48px;
+  font-size: 48px;
+}
+#lokalita .projContent{
+  margin-bottom: 10px;
+}
+#lokalita p{
+  padding: 3vh 2vh;
 }
 
 @media only screen and (max-width: 1120px) {
