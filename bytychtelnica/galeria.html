@@ -60,21 +60,23 @@
       <h2>GALÉRIA</h2>
     </div>
     <div class="background">
-      <img src="image/bytyBcg1.jpg" alt="logo" id="backgroundImage">
-      <a href="#" id="switchbutton1" onclick="nextBckImage()">></a>
-      <a href="#" id="switchbutton2" onclick="nextBckImage()"><</a>
+      <img src="image/vizualizacie/A_Photo - 1.jpg" alt="logo" id="backgroundImage">
+      <a href="#switchbutton1" id="switchbutton1" onclick="nextBckImage()">></a>
+      <a href="#switchbutton2" id="switchbutton2" onclick="prevBckImage()"><</a>
       <div class="gDots">
-        <a href="#"><span  role="button" id="gDot0" onclick="nextBckImage()"></span></a>
-        <a href="#"><span  role="button" id="gDot1" onclick="nextBckImage()"></span></a>
-        <a href="#"><span  role="button" id="gDot2" onclick="nextBckImage()"></span></a>
-        <a href="#"><span  role="button" id="gDot3" onclick="nextBckImage()"></span></a>
-        <a href="#"><span  role="button" id="gDot4" onclick="nextBckImage()"></span></a>
-        <a href="#"><span  role="button" id="gDot5" onclick="nextBckImage()"></span></a>
-        <a href="#"><span  role="button" id="gDot6" onclick="nextBckImage()"></span></a>
-        <a href="#"><span  role="button" id="gDot7" onclick="nextBckImage()"></span></a>
+        <a href="#gDot0"><span  role="button" id="gDot0" onclick="setImage_at_Index(0)"></span></a>
+        <a href="#gDot0"><span  role="button" id="gDot1" onclick="setImage_at_Index(1)"></span></a>
+        <a href="#gDot0"><span  role="button" id="gDot2" onclick="setImage_at_Index(2)"></span></a>
+        <a href="#gDot0"><span  role="button" id="gDot3" onclick="setImage_at_Index(3)"></span></a>
+        <a href="#gDot0"><span  role="button" id="gDot4" onclick="setImage_at_Index(4)"></span></a>
+        <a href="#gDot0"><span  role="button" id="gDot5" onclick="setImage_at_Index(5)"></span></a>
+        <a href="#gDot0"><span  role="button" id="gDot6" onclick="setImage_at_Index(6)"></span></a>
+        <a href="#gDot0"><span  role="button" id="gDot7" onclick="setImage_at_Index(7)"></span></a>
       </div>
     </div>
-
+    <p id="imgIndexer">
+      <span id="imgIndex">1</span>/8
+    </p>
 
     <!-- Mobile site -->
     <div id="mobileHeader">
@@ -82,7 +84,7 @@
         <a href="index.html">
           <img class="navlogo" src="image/logo.jpg" alt="logo">
         </a>
-        <img id="menuSB" class="menuSideBar" src="image/sideMenu.PNG" alt="side menu">
+        <img id="menuSB" class="menuSideBar" src="icons/dropDown.jpg" alt="side menu">
       </div>
     </div>
     <div id="mobileSideBar">
