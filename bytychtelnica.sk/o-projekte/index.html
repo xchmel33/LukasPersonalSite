@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="sk" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>O projekte - bytychtelnica.sk</title>
+  <link rel="stylesheet" href="../master/css/master.css">
+  <link rel="stylesheet" href="../master/css/byty.css">
+    <link href="..///db.onlinewebfonts.com/c/51fdf8021065497210ca54837e1601e9?family=Neue+Einstellung" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+  <div class="mobile-wrapper">
+
+    <!--    header    -->
+    <!--    copy !    -->
+    <div id="header">
+      <div class="content">
+        <a href="../"> <!-- !!!!! -->
+          <img class="navlogo" src="../master/image/logo.jpg" alt="logo">
+        </a>
+        <ul class="navigation">
+          <li class="oProjekte">
+            <a href="../o-projekte/">
+              <img src="../master/image/oProjekteIcon.JPG" alt="" class="navIcon">
+              <span class="navText">O PROJEKTE</span>
+            </a>
+          </li>
+          <li class="bytyNav" id="bNav" onmouseover="showDropNav()" onmouseout="hideDropNav()">
+            <a href="../byty/">
+              <img src="../master/image/BytyIcon.JPG" alt="" class="navIcon">
+              <span class="navText">BYTY<span class="rotate90">></span></span>
+            </a>
+          </li>
+          <div id="hiddenHover" onmouseover="showDropNav()" onmouseout="hideDropNav()"></div>
+          <ul id="hidden" onmouseover="showDropNav()" onmouseout="hideDropNav()">
+            <li><a href="../byty/1-podzemne-podlazie/">1. podzemné podlažie</a></li>
+            <li><a href="../byty/1-nadzemne-podlazie/">1. nadzemné podlažie</a></li>
+            <li><a href="../byty/2-nadzemne-podlazie/">2. nadzemné podlažie</a></li>
+            <li><a href="../byty/3-nadzemne-podlazie/">3. nadzemné podlažie</a></li>
+            <li><a href="../byty/4-nadzemne-podlazie/">4. nadzemné podlažie</a></li>
+          </ul>
+
+          <li class="galeria">
+            <a href="../galeria/">
+              <img src="../master/image/GaleriaIcon.JPG" alt="" class="navIcon">
+              <span class="navText">GALÉRIA</span>
+            </a>
+          </li>
+          <li class="kontakt">
+            <a href="../kontakt/">
+              <img src="../master/image/KontaktIcon.JPG" alt="" class="navIcon">
+              <span class="navText">KONTAKT</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Mobile header -->
+    <!--     copy !    -->
+    <div id="mobileHeader">
+      <div class="content">
+        <a href="../"> <!-- !!!!! -->
+          <img class="navlogo" src="../master/image/logo.jpg" alt="logo">
+        </a>
+        <img id="menuSB" class="menuSideBar" src="../master/image/sideMenu.PNG" alt="side menu">
+      </div>
+    </div>
+    <div id="mobileSideBar">
+      <ul>
+        <li>
+          <a href="../o-projekte/">O PROJEKTE</a>
+        </li>
+        <li>
+          <a href="../byty/">BYTY</a> <a href="../#" id="rotate180" class="rotate90" onclick="showMobileDropNav()">></a>
+        </li>
+        <ul id="mobileHidden">
+          <li><a href="../byty/1-podzemne-podlazie/">1. podzemné podlažie</a></li>
+          <li><a href="../byty/1-nadzemne-podlazie/">1. nadzemné podlažie</a></li>
+          <li><a href="../byty/2-nadzemne-podlazie/">2. nadzemné podlažie</a></li>
+          <li><a href="../byty/3-nadzemne-podlazie/">3. nadzemné podlažie</a></li>
+          <li><a href="../byty/4-nadzemne-podlazie/">4. nadzemné podlažie</a></li>
+        </ul>
+        <li>
+          <a href="../galeria/">GALERIA</a>
+        </li>
+        <li>
+          <a href="../kontakt/">KONTAKT</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- O Projekte -->
+    <p id="text" class="projContent">Pokoj a kľud vidieka s komplexnou občianskou vybavenosťou v bezprostrednej blízko mesta vytvára z Chtelnice ideálne miesto pre Váš nový domov. <br> Bytový dom PANŠULA III,  je III. etapou výstavby bytového súboru v danej lokalite. Projekt ponúka 31 bytov, ktoré predstavujú ideálne riešenie pre rodiny s deťmi a zároveň pre všetkých, ktorí túžia po zmene a vlastnom bývaní. </p>
+    <div id="projIcons">
+      <div id="projTriangle"></div>
+      <div id="projBackground">
+        <div class="projContent">
+          <ul id="projIconsUl">
+            <li>
+              <img class="projIcon" src="../master/icons/key.png" alt="">
+              <p class="iconText">Nasťahujte sa do bytu na kľúč, ktorý predstavuje ideálne riešenie pre rodiny s deťmi i pre všetkých ľudí, ktorí túžia po zmene.</p>
+            </li>
+            <li>
+              <img class="projIcon" src="../master/icons/sedan.png" alt="">
+              <p class="iconText">Cesta do Trnavy alebo Piešťan vám bude trvať len 20 minút.</p>
+            </li>
+            <li>
+              <img class="projIcon" src="../master/icons/park.png" alt="">
+              <p class="iconText">Navštívte krásny Chtelnický kaštieľ a zrelaxujte sa pri Chtelnickej priehrade v krásnej prírode. Prostredie je ako stvorené pre bežcov či cyklistov.</p>
+            </li>
+            <li>
+              <img class="projIcon" src="../master/icons/grocery.png" alt="">
+              <p class="iconText">Využívajte dostupnú komplexnú občiansku vybavenosť s obchodmi, poštou, pekárňou, pizzeriou či pumpou.​</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <img class="projContent" src="../master/image/harmonogram.png" alt="">
+    <img id="financovanie" class="projContent" src="../master/image/Financovanie.png" alt="">
+    <div id="lokalita">
+      <p class="projContent">Lokalita</p>
+    </div>
+    <iframe id="map" class="projContent" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=48.569004%2C%2017.629360&amp;t=m&amp;z=15&amp;output=embed&amp;iwloc=near" title="%3$s" aria-label="%3$s"></iframe>
+  </div>
+
+  <!-- scripts -->
+  <script src="../master/javascript/dropNav.js" type="text/javascript"></script>
+  <script src="../master/javascript/mobileDropNav.js" type="text/javascript"></script>
+</body>

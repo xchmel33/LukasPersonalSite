@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/master.css">
   <link rel="stylesheet" href="css/byty.css">
   <link rel="stylesheet" href="css/pp1.css">
-  <link rel="stylesheet" href="css/np2.css">
+  <link rel="stylesheet" href="css/np1.css">
 </head>
 
 <body>
@@ -92,14 +92,14 @@
 
     <div class="podlazByt">
       <div id="mainImg" class="mainImg">
-        <div class="hoverArea" id="HA0" onmouseover="show1podpodlaz();" onmouseout="show2nadpodlaz()" onclick="document.location='1podzemnepodlazie.html';return false;"></div>
-        <div class="hoverArea" id="HA1" onmouseover="show1nadpodlaz();" onmouseout="show2nadpodlaz()" onclick="document.location='1nadzemnepodlazie.html';return false;"></div>
-        <div class="hoverArea" id="HA2" onmouseover="show2nadpodlaz();" onmouseout="show2nadpodlaz()" onclick="document.location='2nadzemnepodlazie.html';return false;"></div>
-        <div class="hoverArea" id="HA3" onmouseover="show3nadpodlaz();" onmouseout="show2nadpodlaz()" onclick="document.location='3nadzemnepodlazie.html';return false;"></div>
-        <div class="hoverArea" id="HA4" onmouseover="show4nadpodlaz();" onmouseout="show2nadpodlaz()" onclick="document.location='4nadzemnepodlazie.html';return false;"></div>
+        <div class="hoverArea" id="HA0" onmouseover="show1podpodlaz();" onmouseout="show1nadpodlaz()" onclick="document.location='1podzemnepodlazie.html';return false;"></div>
+        <div class="hoverArea" id="HA1" onmouseover="show1nadpodlaz();" onmouseout="show1nadpodlaz()" onclick="document.location='1nadzemnepodlazie.html';return false;"></div>
+        <div class="hoverArea" id="HA2" onmouseover="show2nadpodlaz();" onmouseout="show1nadpodlaz()" onclick="document.location='2nadzemnepodlazie.html';return false;"></div>
+        <div class="hoverArea" id="HA3" onmouseover="show3nadpodlaz();" onmouseout="show1nadpodlaz()" onclick="document.location='3nadzemnepodlazie.html';return false;"></div>
+        <div class="hoverArea" id="HA4" onmouseover="show4nadpodlaz();" onmouseout="show1nadpodlaz()" onclick="document.location='4nadzemnepodlazie.html';return false;"></div>
       </div>
       <div class="podlazImg">
-        <img src="image/byty/b2.jpg" alt="pp1" id="pImg">
+        <img src="image/byty/b1.jpg" alt="pp1" id="pImg">
         <div id="highlighterP1" class="highlighter" onmouseover="highlightElement('P1','P10','P19')" onmouseout="unhighlightElement('P1','P10','P19')"></div>
         <div id="highlighterP2" class="highlighter" onmouseover="highlightElement('P2','P11','P20')" onmouseout="unhighlightElement('P2','P11','P20')"></div>
         <div id="highlighterP3" class="highlighter" onmouseover="highlightElement('P3','P12','P21')" onmouseout="unhighlightElement('P3','P12','P21')"></div>
@@ -131,10 +131,9 @@
     </div>
     <div class="podlazTableBackground">
       <p>Dostupnosť</p>
-      <div class="podlazTable">
+      <div id="pT" class="podlazTable">
         <table>
-
-          <thead>
+          <thead id="pTH">
             <tr>
               <td>Názov</td>
               <td>Veľkosť</td>
@@ -143,53 +142,53 @@
               <td>Dostupnosť</td>
             </tr>
           </thead>
-          <tr id='P9' onmouseover="highlightElement('P9','P18','P27')" onmouseout="unhighlightElement('P9','P18','P27')" onclick="document.location='image/byty/byt-A2.2.pdf'">
-            <td>A2.2</td>
+          <tr id='P9' onmouseover="highlightElement('P9','P18','P27')" onmouseout="unhighlightElement('P9','P18','P27')" onclick="document.location='image/byty/byt-A1.1.pdf'">
+            <td>A1.1</td>
             <td>2 izobový</td>
-            <td>54,04 m<sup>2</sup></td>
-            <td>64 848 €</td>
+            <td>54,21 m<sup>2</sup></td>
+            <td>65 052 €</td>
             <td>voľný</td>
           </tr>
-          <tr id='P8' onmouseover="highlightElement('P8','P17','P26')" onmouseout="unhighlightElement('P8','P17','P26')" onclick="document.location='image/byty/byt-B2.2.pdf'">
-            <td>B2.2</td>
+          <tr id='P8' onmouseover="highlightElement('P8','P17','P26')" onmouseout="unhighlightElement('P8','P17','P26')" onclick="document.location='image/byty/byt-B1.1.pdf'">
+            <td>B1.1</td>
             <td>1 izobový</td>
-            <td>35,31 m<sup>2</sup></td>
-            <td>42 372 €</td>
+            <td>35,98 m<sup>2</sup></td>
+            <td>43 176 €</td>
             <td>voľný</td>
           </tr>
-          <tr id='P6' onmouseover="highlightElement('P6','P15','P24')" onmouseout="unhighlightElement('P6','P15','P24')" onclick="document.location='image/byty/byt-C2.2.pdf'">
-            <td>C2.2</td>
+          <tr id='P6' onmouseover="highlightElement('P6','P15','P24')" onmouseout="unhighlightElement('P6','P15','P24')" onclick="document.location='image/byty/byt-C1.1.pdf'">
+            <td>C1.1</td>
             <td>2 izobový</td>
-            <td>49,93 m<sup>2</sup></td>
-            <td>59 916 €</td>
+            <td>50,79 m<sup>2</sup></td>
+            <td>60 948 €</td>
             <td>voľný</td>
           </tr>
-          <tr id='P5' onmouseover="highlightElement('P5','P14','P23')" onmouseout="unhighlightElement('P5','P14','P23')" onclick="document.location='image/byty/byt-D2.2.pdf'">
-            <td>D2.2</td>
+          <tr id='P5' onmouseover="highlightElement('P5','P14','P23')" onmouseout="unhighlightElement('P5','P14','P23')" onclick="document.location='image/byty/byt-D1.1.pdf'">
+            <td>D1.1</td>
             <td>2 izobový</td>
-            <td>53,42 m<sup>2</sup></td>
-            <td>64 104 €</td>
+            <td>54,19 m<sup>2</sup></td>
+            <td>65 028 €</td>
             <td>voľný</td>
           </tr>
-          <tr id='P4' onmouseover="highlightElement('P4','P13','P22')" onmouseout="unhighlightElement('P4','P13','P22')" onclick="document.location='image/byty/byt-E2.2.pdf'">
-            <td>E2.2</td>
+          <tr id='P4' onmouseover="highlightElement('P4','P13','P22')" onmouseout="unhighlightElement('P4','P13','P22')" onclick="document.location='image/byty/byt-E1.1.pdf'">
+            <td>E1.1</td>
             <td>3 izobový</td>
-            <td>75,21 m<sup>2</sup></td>
-            <td>90 252 €</td>
-            <td>rezervovaný</td>
+            <td>75,79 m<sup>2</sup></td>
+            <td>90 948 €</td>
+            <td>voľný</td>
           </tr>
-          <tr id='P3' onmouseover="highlightElement('P3','P12','P21')" onmouseout="unhighlightElement('P3','P12','P21')" onclick="document.location='image/byty/byt-F2.2.pdf'">
-            <td>F2.2</td>
+          <tr id='P3' onmouseover="highlightElement('P3','P12','P21')" onmouseout="unhighlightElement('P3','P12','P21')" onclick="document.location='image/byty/byt-F1.1.pdf'">
+            <td>F1.1</td>
             <td>2 izobový</td>
-            <td>60,48 m<sup>2</sup></td>
-            <td>72 576 €</td>
-            <td>rezervovaný</td>
+            <td>61,28 m<sup>2</sup></td>
+            <td>73 536 €</td>
+            <td>voľný</td>
           </tr>
-          <tr id='P2' onmouseover="highlightElement('P2','P11','P20')" onmouseout="unhighlightElement('P2','P11','P20')" onclick="document.location='image/byty/byt-G2.2.pdf'">
-            <td>G2.2</td>
+          <tr id='P2' onmouseover="highlightElement('P2','P11','P20')" onmouseout="unhighlightElement('P2','P11','P20')" onclick="document.location='image/byty/byt-G1.1.pdf'">
+            <td>G1.1</td>
             <td>2 izobový</td>
-            <td>63,92 m<sup>2</sup></td>
-            <td>76 704 €</td>
+            <td>63,94 m<sup>2</sup></td>
+            <td>76 728 €</td>
             <td>voľný</td>
           </tr>
         </table>

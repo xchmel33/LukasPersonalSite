@@ -38,7 +38,7 @@
   width: 570px;
   height: 570px;
   position: relative;
-  z-index: 1;
+  z-index: 0;
 }
 .highlighter{
   opacity: 0;
@@ -54,8 +54,8 @@
 .podlazTable{
   margin-left: auto;
   margin-right: auto;
-  font-size: 16px;
-  color: white;
+  font-size: 16px !important;
+  color: white !important;
   width: 680px;
   display: flex;
   justify-content: space-between;

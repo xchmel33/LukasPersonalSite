@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>bytychtelnica - bytychtelnica.sk</title>
-  <link rel="stylesheet" href="css/master.css">
+  <link rel="stylesheet" href="master/css/master.css">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
   <link href="//db.onlinewebfonts.com/c/51fdf8021065497210ca54837e1601e9?family=Neue+Einstellung" rel="stylesheet" type="text/css"/>
@@ -13,7 +13,7 @@
 <body id="mainBody">
   <div class="mobile-wrapper">
     <div class="background">
-      <img src="image/bytyBcg1.jpg" alt="logo" id="backgroundImage">
+      <img src="master/image/bytyBcg1.jpg" alt="logo" id="backgroundImage">
       <a href="#" id="switchbutton1" onclick="nextBckImage()">></a>
       <a href="#" id="switchbutton2" onclick="nextBckImage()"><</a>
       <a href="#"><span  role="button" id="dot1" onclick="nextBckImage()"></span></a>
@@ -21,42 +21,42 @@
     </div>
     <div id="header">
       <div class="content">
-        <a href="index.html">
-          <img class="navlogo" src="image/logo.jpg" alt="logo">
+        <a href="../bytychtelnica.sk">
+          <img class="navlogo" src="master/image/logo.jpg" alt="logo">
         </a>
         <ul class="navigation">
 
           <li class="oProjekte">
-            <a href="o-projekte.html">
-              <img src="image/oProjekteIcon.JPG" alt="" class="navIcon">
+            <a href="o-projekte/">
+              <img src="master/image/oProjekteIcon.JPG" alt="" class="navIcon">
               <span class="navText">O PROJEKTE</span>
             </a>
           </li>
 
           <li class="bytyNav" id="bNav" onmouseover="showDropNav()" onmouseout="hideDropNav()">
-            <a href="byty.html">
-              <img src="image/BytyIcon.JPG" alt="" class="navIcon">
+            <a href="byty/">
+              <img src="master/image/BytyIcon.JPG" alt="" class="navIcon">
               <span class="navText">BYTY<span class="rotate90">></span></span>
             </a>
           </li>
           <div id="hiddenHover" onmouseover="showDropNav()" onmouseout="hideDropNav()"></div>
           <ul id="hidden" onmouseover="showDropNav()" onmouseout="hideDropNav()">
-            <li><a href="1podzemnepodlazie.html">1. podzemné podlažie</a></li>
-            <li><a href="1nadzemnepodlazie.html">1. nadzemné podlažie</a></li>
-            <li><a href="2nadzemnepodlazie.html">2. nadzemné podlažie</a></li>
-            <li><a href="3nadzemnepodlazie.html">3. nadzemné podlažie</a></li>
-            <li><a href="4nadzemnepodlazie.html">4. nadzemné podlažie</a></li>
+            <li><a href="byty/1-podzemne-podlazie/">1. podzemné podlažie</a></li>
+            <li><a href="byty/1-nadzemne-podlazie/">1. nadzemné podlažie</a></li>
+            <li><a href="byty/2-nadzemne-podlazie/">2. nadzemné podlažie</a></li>
+            <li><a href="byty/3-nadzemne-podlazie/">3. nadzemné podlažie</a></li>
+            <li><a href="byty/4-nadzemne-podlazie/">4. nadzemné podlažie</a></li>
           </ul>
 
           <li class="galeria">
-            <a href="galeria.html">
-              <img src="image/GaleriaIcon.JPG" alt="" class="navIcon">
+            <a href="galeria/">
+              <img src="master/image/GaleriaIcon.JPG" alt="" class="navIcon">
               <span class="navText">GALÉRIA</span>
             </a>
           </li>
           <li class="kontakt">
-            <a href="kontakt.html">
-              <img src="image/KontaktIcon.JPG" alt="" class="navIcon">
+            <a href="kontakt/">
+              <img src="master/image/KontaktIcon.JPG" alt="" class="navIcon">
               <span class="navText">KONTAKT</span>
             </a>
           </li>
@@ -65,32 +65,32 @@
     </div>
 
     <!-- Mobile site -->
-    <img src="image/mobileBackground.jpg" class="mobileBackground">
+    <img src="master/image/mobileBackground.jpg" class="mobileBackground">
     <div id="mobileFrontHeader">
       <div class="content">
         <ul>
           <li>
             <div class="mFHli">
-              <img src="image/oProjekteIcon.JPG" class="mFHimg" onclick="document.location=this.id+'o-projekte.html';return false;">
-              <a href="o-projekte.html">O PROJEKTE</a>
+              <img src="master/image/oProjekteIcon.JPG" class="mFHimg" onclick="document.location=this.id+'o-projekte/';return false;">
+              <a href="o-projekte/">O PROJEKTE</a>
             </div>
           </li>
           <li>
             <div class="mFHli">
-              <img src="image/BytyIcon.JPG" class="mFHimg" onclick="document.location=this.id+'byty.html';return false;">
-              <a href="byty.html">BYTY</a>
+              <img src="master/image/BytyIcon.JPG" class="mFHimg" onclick="document.location=this.id+'byty/';return false;">
+              <a href="byty/">BYTY</a>
             </div>
           </li>
           <li>
             <div class="mFHli">
-              <img src="image/GaleriaIcon.JPG" class="mFHimg" onclick="document.location=this.id+'galeria.html';return false;">
-              <a href="galeria.html">GALÉRIA</a>
+              <img src="master/image/GaleriaIcon.JPG" class="mFHimg" onclick="document.location=this.id+'galeria/';return false;">
+              <a href="galeria/">GALÉRIA</a>
             </div>
           </li>
           <li>
             <div class="mFHli">
-              <img src="image/KontaktIcon.JPG" class="mFHimg" onclick="document.location=this.id+'kontakt.html';return false;">
-              <a href="kontakt.html">KONTAKT</a>
+              <img src="master/image/KontaktIcon.JPG" class="mFHimg" onclick="document.location=this.id+'kontakt/';return false;">
+              <a href="kontakt/">KONTAKT</a>
             </div>
           </li>
         </ul>
@@ -99,8 +99,8 @@
     <!-- Mobile site -->
 
   </div>
-  <script src="javascript/slideshow.js" type="text/javascript"></script>
-  <script src="javascript/dropNav.js" type="text/javascript"></script>
+  <script src="master/javascript/slideshow.js" type="text/javascript"></script>
+  <script src="master/javascript/dropNav.js" type="text/javascript"></script>
 </body>
 
 </html>

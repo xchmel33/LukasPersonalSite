@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>byty - bytychtelnica.sk</title>
+  <link rel="stylesheet" href="../master/css/master.css">
+  <link rel="stylesheet" href="../master/css/byty.css">
+</head>
+
+<body>
+  <div class="mobile-wrapper">
+    <div id="header">
+      <div class="content">
+        <a href="../">
+          <img class="navlogo" src="../master/image/logo.jpg" alt="logo">
+        </a>
+        <ul class="navigation">
+
+          <li class="oProjekte">
+            <a href="../o-projekte/">
+              <img src="../master/image/oProjekteIcon.JPG" alt="" class="navIcon">
+              <span class="navText">O PROJEKTE</span>
+            </a>
+          </li>
+
+          <li class="bytyNav" id="bNav" onmouseover="showDropNav()" onmouseout="hideDropNav()">
+            <a href="../byty/">
+              <img src="../master/image/BytyIcon.JPG" alt="" class="navIcon">
+              <span class="navText">BYTY<span class="rotate90">></span></span>
+            </a>
+          </li>
+          <div id="hiddenHover" onmouseover="showDropNav()" onmouseout="hideDropNav()"></div>
+          <ul id="hidden" onmouseover="showDropNav()" onmouseout="hideDropNav()">
+            <div id="hiddenHover" onmouseover="showDropNav()" onmouseout="hideDropNav()"></div>
+            <li><a href="1-podzemne-podlazie/">1. podzemné podlažie</a></li>
+            <li><a href="1-nadzemne-podlazie/">1. nadzemné podlažie</a></li>
+            <li><a href="2-nadzemne-podlazie/">2. nadzemné podlažie</a></li>
+            <li><a href="3-nadzemne-podlazie/">3. nadzemné podlažie</a></li>
+            <li><a href="4-nadzemne-podlazie/">4. nadzemné podlažie</a></li>
+          </ul>
+
+          <li class="galeria">
+            <a href="../galeria/">
+              <img src="../master/image/GaleriaIcon.JPG" alt="" class="navIcon">
+              <span class="navText">GALÉRIA</span>
+            </a>
+          </li>
+          <li class="kontakt">
+            <a href="../kontakt/">
+              <img src="../master/image/KontaktIcon.JPG" alt="" class="navIcon">
+              <span class="navText">KONTAKT</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Mobile site -->
+    <div id="mobileHeader">
+      <div class="content">
+        <a href="../">
+          <img class="navlogo" src="../master/image/logo.jpg" alt="logo">
+        </a>
+        <img id="menuSB" class="menuSideBar" src="../master/icon/dropDown.jpg" alt="side menu">
+      </div>
+    </div>
+    <div id="mobileSideBar">
+      <ul>
+        <li>
+          <a href="../o-projekte/">O PROJEKTE</a>
+        </li>
+        <li>
+          <a href="../byty/">BYTY</a> <a href="#" id="rotate180" class="rotate90" onclick="showMobileDropNav()">></a>
+        </li>
+        <ul id="mobileHidden">
+          <li><a href="1-podzemne-podlazie/">1. podzemné podlažie</a></li>
+          <li><a href="1-nadzemne-podlazie/">1. nadzemné podlažie</a></li>
+          <li><a href="2-nadzemne-podlazie/">2. nadzemné podlažie</a></li>
+          <li><a href="3-nadzemne-podlazie/">3. nadzemné podlažie</a></li>
+          <li><a href="4-nadzemne-podlazie/">4. nadzemné podlažie</a></li>
+        </ul>
+        <li>
+          <a href="../galeria/">GALERIA</a>
+        </li>
+        <li>
+          <a href="../kontakt/">KONTAKT</a>
+        </li>
+      </ul>
+    </div>
+    <!-- Mobile site -->
+
+    <div id="mainImg" class="mainImg">
+      <div class="hoverArea" id="HA0" onmouseover="show1podpodlaz();" onmouseout="showbasepodlaz()" onclick="document.location='1-podzemne-podlazie/';return false;"></div>
+      <div class="hoverArea" id="HA1" onmouseover="show1nadpodlaz();" onmouseout="showbasepodlaz()" onclick="document.location='1-nadzemne-podlazie/';return false;"></div>
+      <div class="hoverArea" id="HA2" onmouseover="show2nadpodlaz();" onmouseout="showbasepodlaz()" onclick="document.location='2-nadzemne-podlazie/';return false;"></div>
+      <div class="hoverArea" id="HA3" onmouseover="show3nadpodlaz();" onmouseout="showbasepodlaz()" onclick="document.location='3-nadzemne-podlazie/';return false;"></div>
+      <div class="hoverArea" id="HA4" onmouseover="show4nadpodlaz();" onmouseout="showbasepodlaz()" onclick="document.location='4-nadzemne-podlazie/';return false;"></div>
+    </div>
+  </div>
+  <script src="../master/javascript/dropNav.js" type="text/javascript"></script>
+  <script src="../master/javascript/mobileDropNav.js" type="text/javascript"></script>
+  <script src="../master/javascript/podlazia.js" type="text/javascript"></script>
+</body>
+
+</html>

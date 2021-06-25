@@ -1,13 +1,13 @@
 var currentIndex = 0;
 var imgDuration = 5000;
-var images = ["image/vizualizacie/A_Photo - 1.jpg",
-              "image/vizualizacie/A_Photo - 2.jpg",
-              "image/vizualizacie/A_Photo - 3.jpg",
-              "image/vizualizacie/A_Photo - 4.jpg",
-              "image/vizualizacie/A_Photo - 5.jpg",
-              "image/vizualizacie/A_Photo - 6.jpg",
-              "image/vizualizacie/A_Photo - 9.jpg",
-              "image/vizualizacie/A_Photo - 10.jpg"];
+var images = ["../master/image/vizualizacie/A_Photo - 1.jpg",
+              "../master/image/vizualizacie/A_Photo - 2.jpg",
+              "../master/image/vizualizacie/A_Photo - 3.jpg",
+              "../master/image/vizualizacie/A_Photo - 4.jpg",
+              "../master/image/vizualizacie/A_Photo - 5.jpg",
+              "../master/image/vizualizacie/A_Photo - 6.jpg",
+              "../master/image/vizualizacie/A_Photo - 9.jpg",
+              "../master/image/vizualizacie/A_Photo - 10.jpg"];
 var dotID = "gDot0";
 
 function nextBckImage() {
